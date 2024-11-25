@@ -52,7 +52,7 @@ nav .navbar a:hover {
     margin: 1em auto;
     max-width: 1000px;
     text-align: center;
-    padding-top: 50px;  /* Add more space on top */
+    padding-top: 150px;  /* Add more space on top */
     padding-bottom: 50px;  /* Add more space at the bottom */
     margin-bottom: 30px;  /* Increase the space below the section */
     min-height: 800px;  /* Ensures the section is at least 500px tall, but can grow taller */
@@ -97,7 +97,9 @@ nav .navbar a:hover {
 /* Section Divider Line */
 #about, #portfolio, #contact, #logos {
     border-bottom: 2px solid #ccc;  /* Light grey divider line */
+    margin-bottom: 0px;
 }
+
 
 /* Logos Section */
 
