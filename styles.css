@@ -60,6 +60,46 @@ nav .navbar a:hover {
     height: 10vh;  /* Makes the section 1.5 times the height of the screen */
 }
 
+
+.about {
+    background-color: #5a4343;;
+ 
+    padding-bottom: 100px;
+}
+
+.about #box {
+    
+    width: 200px;
+    height: 50px;
+    background-color: #2C3E50;
+    padding-right: 40px;
+    margin-left: 850px; /* Center the button */
+    padding-bottom:  10px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
+}
+    
+
+
+.about #words {
+    
+    width: 200px;
+    height: 50px;
+    color: #8a8a8a;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+
+}
+
+.about #words:hover {
+    opacity: 100%;
+    color: #301b1b ;
+    transition: opacity 0.25s ease-in;
+    
+
+}
+
 #portfolio {
     min-height: 500px; /* Increase padding to make it larger */
 /* Optional: Change background color for distinction */
