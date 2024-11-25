@@ -60,45 +60,39 @@ nav .navbar a:hover {
     height: 10vh;  /* Makes the section 1.5 times the height of the screen */
 }
 
-
-.about {
-    background-color: #5a4343;;
- 
-    padding-bottom: 100px;
+/* Style for the button container */
+#box {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Add some spacing around */
 }
 
-.about #box {
-    
-    width: 200px;
-    height: 50px;
-    background-color: #2C3E50;
-    padding-right: 40px;
-    margin-left: 850px; /* Center the button */
-    padding-bottom:  10px;
-    border-radius: 5%;
-    box-shadow: 5px 5px 10px 2px rgb(0, 0, 0);
-}
-    
-
-
-.about #words {
-    
-    width: 200px;
-    height: 50px;
-    color: #8a8a8a;
-    font-size: 30px;
-    padding-left: 30px;
-    padding-top: 15px;
-
+/* Style for the link within the button box */
+#box a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.about #words:hover {
-    opacity: 100%;
-    color: #301b1b ;
-    transition: opacity 0.25s ease-in;
-    
-
+/* Hover effect */
+#box a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
 }
+
+/* Active effect */
+#box a:active {
+    transform: translateY(0); /* Reset lift when clicked */
+    background-color: #003f7f; /* Even darker blue when active */
+}
+
+
 
 #portfolio {
     min-height: 500px; /* Increase padding to make it larger */
