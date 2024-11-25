@@ -61,36 +61,6 @@ nav .navbar a:hover {
 }
 
 /* Style for the button container */
-#box {
-    text-align: center; /* Center the button */
-    margin: 20px 0; /* Add some spacing around */
-}
-
-/* Style for the link within the button box */
-#box a {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #007bff; /* Button background color */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size for the button text */
-    font-weight: bold;
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-/* Hover effect */
-#box a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-3px); /* Slight lift on hover */
-}
-
-/* Active effect */
-#box a:active {
-    transform: translateY(0); /* Reset lift when clicked */
-    background-color: #003f7f; /* Even darker blue when active */
-}
 
 
 
@@ -382,3 +352,33 @@ img {
 }
 
 
+#box {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Add some spacing around */
+}
+
+/* Style for the link within the button box */
+#box a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6347; /* Button background color */
+    color: rgb(255, 255, 255); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect */
+#box a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Active effect */
+#box a:active {
+    transform: translateY(0); /* Reset lift when clicked */
+    background-color: #003f7f; /* Even darker blue when active */
+}
