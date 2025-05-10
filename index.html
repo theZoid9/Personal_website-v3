@@ -7,176 +7,46 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://fonts.bunny.net/css?family=gagalin" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Zaid Akhalwaya</h1>
-            <p>Data engineer | Python web scraper</p>
+    <section class="Homepage">
+
+<!-- nav Bar-->
+        <nav class="sideBar">
+            <ul >
+                <li><a href="">HOME</a></li>
+                <li><a href=""> ABOUT</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href=""><span style="color: green;margin-right: 10px;"><b>HIRE ME!</b></span></a></li>
+            </ul>
+        </nav>
+
+<!--Home page-->    
+        <div>
+            <h1 class="name">ZAID</h1>
+            <h1 class="surname">AKHALWAYA</h1>
+            <H3 class="about">Hi, I’m a <span style="color: green;">Full stack developer</span>  and</H3>
+            <h3 class="eng">Data engineering </h3>
+            <h4 class="des">Hey, are you looking for a <br><SPAN style="margin-left: 3px;"></SPAN>developer/data engineer <br>
+              <span style="margin-left: 10PX;"></span>  Check out my skill set !  </h4>
         </div>
-    </header>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
 
-        <section id="about" class="section">
-            <div class="container">
-                
-                <div class="circle-image-container">
-                    <img src="img/zprpic.png" alt="Profile Picture" class="circle-image">
-                </div>
-            </div>
-            
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Technology and science are fields that resonate with me.
-                    The leaps we’re making, <br>from the marvels of AI to the groundbreaking achievements of SpaceX exploration,<br>
-                    highlight a future of boundless possibilities. Within this expansive realm,<br>
-                    I've felt a particular draw towards IT and programming. <br>
-                    They've grounded me in systematic thinking, problem-solving, and the joy of design. <br>
-                    To me, data engineering feels like an intricate dance of logic and creativity.<br></p>
-            </div>
-
-            <div  id="box">
-                <a href="https://drive.google.com/file/d/1dQ8FpmsySTgGd2SNGv2PvBZykRW0WACw/view?usp=sharing" target="_blank">
-                <p id="words">
-                <b>View CV</b>
-               </p>
-               </a>
-            </div>   
-        </section>
-
-        <section id="logos" class="section">
-            <div class="container">
-                <h2>Front-end</h2>
-                <div class="logo-bar">
-                    <img src="logos/html" alt="Logo 5">
-                    <img src="logos/js" alt="Logo 6">
-                    <img src="logos/css2" alt="Logo 6">
-                   
-                </div>
-                <h1>Back-end</h1>
-                <div class="back-end">
-                    <img src="logos/R.png" alt="Logo 7">
-
-                </div>
-                <h3>Platforms</h3>
-                <div class="platforms">
-                    <img src="logos/nb" alt="Logo 4">
-                    <img src="logos/git">
-                    <img src="logos/docker">
-
-                </div>
-            </div>
-
-                <h3>Database</h3>
-                <div class="Database">
-                    <img src="logos/sql" alt="Logo 3">
-                    <img src="logos/post" alt="Logo 3">
-                   
-                </div>
-            </div>
+<!-- Download button-->
+        <section class="download">
+            <h2>DOWNLOAD CV</h2>
 
         </section>
 
-        <section id="portfolio" class="section">
-            <div class="container">
-                <h2>Portfolio</h2>
-                <div class="portfolio-carousel">
-                    <button class="arrow left-arrow">&lt;</button>
-                    <div class="portfolio-items">
-                        <div class="portfolio-item">
-                            <img src="img/web.png" alt="Project 1">
-                            <h3>Web scraper</h3>
-                            <p>Scraping information from books.toscrape.com</p>
-                            <a href="https://github.com/theZoid9/Web-scraper-v1.0.0" class="project-button" target="_blank">View Project</a>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="img/ETL-pipelines-–-the-starting-guide-1024x683.png" alt="Project 2">
-                            <h3>Basic ETL pipeline</h3>
-                            <p>Brief description of the project.</p>
-                            <a href="https://github.com/theZoid9/Basic-ETL-pipeline" class="project-button" target="_blank">View Project</a>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="img/images.png" alt="Project 3">
-                            <h3>Data wrangling with Python and Pandas</h3>
-                            <p>Brief description of the project.</p>
-                            <a href="https://example.com/project1" class="project-button" target="_blank">View Project</a>
-                        </div>
-                        <div class="portfolio-item">
-                            
-                            <img src="Portfolio/create-a-custom-discord-bot.jpg" alt="Project 4">
-                            
-                            
-                            <h3>Discord bot</h3>
-                            <p>Discord bot that prompts riddles using the Discord API</p>
-                            <a href="https://github.com/theZoid9/The-Riddler-bot" class="project-button" target="_blank">View Project</a>
-                      
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="img/GitHub-logo.png" alt="Project 5">
-                            <h3>Github API</h3>
-                            <p>Extract Data from Github using github API</p>
-                            <a href="https://example.com/project1" class="project-button" target="_blank">View Project</a>
-                        </div>
-                        <div class="portfolio-item">
-                            <img src="img/sc" alt="Project 6">
-                            <h3>Shopping cart calculations</h3>
-                            <p>Performing calculations for user Shopping cart which is stored in a JSON file</p>
-                            <a href="https://example.com/project1" class="project-button" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                    <button class="arrow right-arrow">&gt;</button>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact" style="background-color: #8a8a8a; color: var(--accent); padding-bottom: 200px; padding-left: 100px; text-align: center;">
-            <div class="container">
-                <div class="social-medias" style="display: flex; flex-wrap: wrap; max-width: 1000px; justify-content: space-around; margin: auto; margin-top: 30px; position: relative; top: 200px;">
-                    <a href="https://github.com/theZoid9" target="_blank" class="social-media" style="text-decoration: none; transition: transform 0.2s ease-in; padding-bottom: 10px; margin-bottom: 10px;">
-                        <i class="ri-github-fill ri-3x"></i>
-                        <p>GitHub</p>
-                    </a>
-                    <a href="https://drive.google.com/drive/folders/1gbNKjRe_8z1RHio4SYwurzM-SiyXqx1V?usp=sharing" target="_blank" class="social-media" style="text-decoration: none; color: #2b2c2c;; transition: transform 0.2s ease-in; padding-bottom: 10px; margin-bottom: 10px;">
-                        <i class="ri-drive-fill ri-3x"></i>
-                        <p>Drive</p>
-                    </a>
-                    <a href="https://www.codewars.com/users/theZoid" target="_blank" class="social-media" style="text-decoration: none;  transition: transform 0.2s ease-in; padding-bottom: 10px; margin-bottom: 10px;">
-                        <i class="ri-code-box-fill ri-3x"></i>
-                        <p>Codewars</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/zaid-akhalwaya-31495815b/" target="_blank" class="social-media" style="text-decoration: none; transition: transform 0.2s ease-in; padding-bottom: 10px; margin-bottom: 10px;">
-                        <i class="ri-linkedin-box-line ri-3x"></i>
-                        <p>LinkedIn</p>
-                    </a>
-                    <button id="up">
-                        <a  href="#about">
-                          <i class="ri-arrow-up-circle-fill ri-5x"></i>
-                        </a>
-                        </button>
-                    </button>
-                </div>
-            </div>
-        </section>
-        
+    </section>
 
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Zaid Akhalwaya All Rights Reserved.</p>
-        </div>
-    </footer>
+    <section class="page2">
+        <div><h1></h1></div>
+    </section>
+
     <!-- Link to the JavaScript file -->
     <script src="script.js"></script>
 </body>

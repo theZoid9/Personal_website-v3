@@ -1,386 +1,109 @@
-/* General Reset */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f8f8;
-}
-
-h1, h2, h3 {
-    margin-bottom: 0.5em;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav {
-    background: #444;
-    color: #fff;
-}
-
-nav .navbar {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    background-color: #253439;
     margin: 0;
     padding: 0;
-}
-
-nav .navbar li {
-    margin: 0 15px;
-}
-
-nav .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav .navbar a:hover {
-    color: #ff6347;
-}
-
-.section {
-    height: 800px;
-    overflow: hidden;
-    padding: 2em 1em;
-    margin: 1em auto;
-    max-width: 1000px;
-    text-align: center;
-    padding-top: 150px;  /* Add more space on top */
-    padding-bottom: 50px;  /* Add more space at the bottom */
-    margin-bottom: 30px;  /* Increase the space below the section */
-    min-height: 800px;  /* Ensures the section is at least 500px tall, but can grow taller */
-    height: 100vh;  /* Makes the section as tall as the screen */
-    height: 10vh;  /* Makes the section 1.5 times the height of the screen */
-}
-
-/* Style for the button container */
-
-
-
-#portfolio {
-    min-height: 500px; /* Increase padding to make it larger */
-/* Optional: Change background color for distinction */
-    font-size: 1.2rem; /* Slightly larger font size for this section */
-}
-
-#logos {
-    min-height:  800px;
     
 }
 
-.circle-image-container {
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    margin: 20px auto; /* Adds some margin around the container */
-    width: 200px; /* Adjust the size of the circle */
-    height: 230px; /* Keep this equal to width for a perfect circle */
-    border-radius: 50%; /* Makes the container circular */
-    overflow: hidden; /* Ensures the image stays within the circular frame */
-    border: 5px solid #ccc; /* Optional: Adds a border around the circle */
-}
-
-.circle-image {
-    width: 100%; /* Ensures the image fits within the container */
-    height: 100%; /* Ensures the image fills the container */
-    object-fit: cover; /* Ensures the image scales properly without distortion */
-}
-
-
-/* Section Divider Line */
-#about, #portfolio, #contact, #logos {
-    border-bottom: 2px solid #ccc;  /* Light grey divider line */
-    margin-bottom: 0px;
-}
-
-
-/* Logos Section */
-
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-button {
-    background: #8a8a8a;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-
-#logos {
-    text-align: center; /* Center-aligns content in the section */
-    padding: 90px; /* Adds padding around the section */
-}
-
-#logos h2 {
-    font-size: 24px;
-    margin-top: 0px;
-    
-    margin-bottom: 20px; /* Adds space below the heading */
-    color: #333;
-}
-#logos h1 {
-    margin-top: 60px;
-    font-size: 24px;
-    margin-bottom: 20px; /* Adds space below the heading */
-    color: #333;
-}
-#logos h3 {
-    margin-top: 60px;
-    font-size: 24px;
-    margin-bottom: 20px; /* Adds space below the heading */
-    color: #333;
-}
-
-#logos .logo-bar {
-    display: flex; /* Arranges logos in a row */
-    flex-wrap: wrap; /* Allows logos to wrap to the next line if needed */
-    justify-content: center; /* Centers the logos horizontally */
-    gap: 20px; /* Adds space between the logos */
-    margin: 0 auto; /* Centers the bar */
-}
-
-#logos .logo-bar img {
-    max-width: 100px; /* Adjust this value to set the maximum width of each logo */
-    height: auto; /* Maintains the aspect ratio of logos */
-    object-fit: contain; /* Ensures logos fit well inside the defined width */
-    transition: transform 0.3s ease; /* Adds a smooth hover effect */
-}
-
-#logos .logo-bar img:hover {
-    transform: scale(1.1); /* Enlarges the logo slightly on hover */
-}
-
-
-#logos .back-end {
-    display: flex; /* Arranges logos in a row */
-    flex-wrap: wrap; /* Allows logos to wrap to the next line if needed */
-    justify-content: center; /* Centers the logos horizontally */
-    gap: 20px; /* Adds space between the logos */
-    margin: 0 auto; /* Centers the bar */
-}
-
-#logos .back-end img {
-    max-width: 100px; /* Adjust this value to set the maximum width of each logo */
-    height: auto; /* Maintains the aspect ratio of logos */
-    object-fit: contain; /* Ensures logos fit well inside the defined width */
-    transition: transform 0.3s ease; /* Adds a smooth hover effect */
-}
-
-#logos .back-end img:hover {
-    transform: scale(1.1); /* Enlarges the logo slightly on hover */
-}
-
-#logos .platforms {
-    display: flex; /* Arranges logos in a row */
-    flex-wrap: wrap; /* Allows logos to wrap to the next line if needed */
-    justify-content: center; /* Centers the logos horizontally */
-    gap: 20px; /* Adds space between the logos */
-    margin: 0 auto; /* Centers the bar */
-}
-
-#logos .platforms img {
-    max-width: 100px; /* Adjust this value to set the maximum width of each logo */
-    height: auto; /* Maintains the aspect ratio of logos */
-    object-fit: contain; /* Ensures logos fit well inside the defined width */
-    transition: transform 0.3s ease; /* Adds a smooth hover effect */
-}
-
-#logos .platforms img:hover {
-    transform: scale(1.1); /* Enlarges the logo slightly on hover */
-}
-#logos .Database {
-    display: flex; /* Arranges logos in a row */
-    flex-wrap: wrap; /* Allows logos to wrap to the next line if needed */
-    justify-content: center; /* Centers the logos horizontally */
-    gap: 20px; /* Adds space between the logos */
-    margin: 0 auto; /* Centers the bar */
-}
-
-#logos .Database img {
-    max-width: 100px; /* Adjust this value to set the maximum width of each logo */
-    height: auto; /* Maintains the aspect ratio of logos */
-    object-fit: contain; /* Ensures logos fit well inside the defined width */
-    transition: transform 0.3s ease; /* Adds a smooth hover effect */
-}
-
-#logos .Database img:hover {
-    transform: scale(1.1); /* Enlarges the logo slightly on hover */
-}
-
-
-/* Portfolio Carousel */
-.portfolio-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-items {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
+.sideBar {
+    position: fixed;
     width: 100%;
+    padding: 0;
+    
+    
 }
 
-.portfolio-item {
-    min-width: 300px;
-    max-width: 300px;
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-/* General reset for images */
-img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove inline space below images */
-}
-
-/* Specific styling for portfolio-item images */
-.portfolio-item img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 200px; /* Adjust height to maintain uniformity */
-    object-fit: cover; /* Ensures the image scales properly and doesn't overflow */
-    border-radius: 5px; /* Optional: Add rounded corners for better aesthetics */
-}
-
-
-
-.arrow {
-    background: #333;
-    color: #fff;
-    border: none;
-    font-size: 1.5em;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}
-
-.arrow:hover {
-    background: #ff6347;
-}
-
-.arrow {
-    background: #333;
-    color: #fff;
-    border: none;
-    font-size: 1.5em;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
-    display: block; /* Default is visible */
-}
-
-.arrow:disabled,
-.arrow[style="display: none;"] {
-    display: none; /* Ensure arrows are hidden when disabled via JS */
-}
-
-.portfolio {
-    min-height: 600px;  /* Ensures it's at least 600px tall */
-}
-
-
-#contact {
-    background-color: #8a8a8a;
-    color: var(--accent);
-    padding-bottom: 200px;
-    padding-left: 100px;
-    text-align: center;
-}
-
-#contact .social-medias {
+.sideBar ul {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 30px;
-    position: relative;
-    top: 200px;
+    list-style: none;
+    justify-content: flex-end;
+    font-family: 'Gagalin';
+    gap: 20px;
 }
 
-#contact .social-media {
+
+.sideBar a{
     text-decoration: none;
-    color: #2b2c2c;
-    transition: transform 0.2s ease-in;
-    font-size: 14px;
-    padding-left: 60px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-#contact .social-media:hover {
-    transform: translateY(20px);
-}
-#up a{
-    color: #313131;
-    text-decoration: none;
-   
-}
-
-#up:hover a {
-    opacity: 100%;
-    color: #5e5e5e;
-  
+    color: rgb(255, 255, 255);
+    font-size: larger;
 }
 
 
-#box {
-    text-align: center; /* Center the button */
-    margin: 20px 0; /* Add some spacing around */
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: 7vh;
+    color: #fdfcf9;
+    background-color: #b29e84;
+    height: 100%;
+    font-family: 'Gagalin';
 }
 
-/* Style for the link within the button box */
-#box a {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #ff6347; /* Button background color */
-    color: rgb(255, 255, 255); /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size for the button text */
-    font-weight: bold;
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+.download h2 {
+    font-family: 'Gagalin';
+    font-size:5vh;
+    
 }
 
-/* Hover effect */
-#box a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-3px); /* Slight lift on hover */
+@font-face {
+    font-family: 'Gagalin';
+    src: url('fonts/Gagalin-Regular.otf') format('opentype');
+  }
+
+
+.name {
+    font-family: 'Gagalin';
+    position: absolute;
+    left: 260px;
+    top:200px;
+    font-size: 6.0vh;
+    color: aliceblue;
+} 
+
+.surname {
+    font-family: 'Gagalin';
+    position: absolute;
+    left: 270px;
+    top:270px;
+    font-size: 5.3vh;
+    color: aliceblue;
+} 
+
+
+.about {
+    position:absolute;
+    font-family: 'Gagalin';
+    left:290px;
+    top: 400px;
+    font-size: 1.4vh;
+    color: aliceblue;
 }
 
-/* Active effect */
-#box a:active {
-    transform: translateY(0); /* Reset lift when clicked */
-    background-color: #003f7f; /* Even darker blue when active */
+.eng {
+    position:absolute;
+    font-family: 'Gagalin';
+    left:340px;
+    top: 420px;
+    font-size: 1.4vh;
+    color: green;
+
+}
+
+.des {
+    position:absolute;
+    
+    left:320px;
+    top: 450px;
+    font-size: 1.4vh;
+    color: #fdfcf9;
+
+}
+
+
+.page2{
+    height: 100vh;
+    background-color: #253439;
 }
