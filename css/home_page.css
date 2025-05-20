@@ -1,31 +1,32 @@
+
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../fonts/Gagalin-Regular.otf') format('opentype');
+  }
+
 body {
     background-color: #253439;
     padding: 0;
-
-}
-
-.Homepage {
-  display: flex;
-  border: 2px solid forestgreen;
+    margin: 0;
 }
 
 
 .burger {
  display: block;
- border: 2px solid red;
+ background-color: #253439;
  float: right;
  justify-content: end;
  cursor: pointer;
-
+ padding: 20px;
+ border: #253439;
 }
 
 .bar1, .bar2, .bar3 {
-  background-color: #140707;
+  background-color: #ffffff;
   width: 35px;
   height: 5px;
   margin: 6px 0;
   transition: 0.4s;
-
 }
 
 .burgers .bar1 {
@@ -41,37 +42,84 @@ body {
 }
 
 
-.download {
-  min-height: 500px;
-  border: 2px solid red;
-  font-size:  2em;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-
+.container {
+  min-height: 780px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 8px;
+  margin: auto;
 }
 
-.home-page {
+.name, .surname {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Gagalin', sans-serif;
+  margin: 0;
+  color: white;
+  position: relative;
+  top: 130px;
+}
+.profile-img img {
+  transform: translateY(180px);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.intro {
+  position: relative;
+  top:260px;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #00c26e;
+  font-weight: bold;
+}
+
+.desc {
+
+  position: relative;
+  top:280px;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.portfolio-btn {
+  position: relative;
+  top:300px;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 19px 24px;
+  background-color: #b29e84;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: 'Gagalin';
+  
+}
+
+.portfolio-btn:hover {
+  background-color: #bda989;
+}
+
+.download {
   display: flex;
   justify-content: center;
-  min-height: 300px;
-  min-width: 4x;
-  border: 2px solid blue;
+  background-color: #b29e84;
+  color: #ffffff;
+  font-size:  1em;
+  font-family: 'Gagalin', sans-serif;
 }
 
-.home-page {
- 
-}
-  
 
-.page2{
-    height: 100vh;
-    background-color: #314d57;
-}
-
-@font-face {
-    font-family: 'Gagalin';
-    src: url('fonts/Gagalin-Regular.otf') format('opentype');
-  }
 
 
 /* ====== Tablet Styles (≥ 600px) ====== */
