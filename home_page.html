@@ -10,19 +10,40 @@
 </head>
 <body>
 
-    <button class="burger" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </button>
 
-<!--Main content-->  
-<div class="container">
+<button class="burger" onclick="toggleNav(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</button>
+
+<!-- Main Page Wrapper -->
+<div class="main-wrapper">
+  <!-- Navigation Panel (Initially hidden on mobile) -->
+  <nav class="nav" id="nav">
+    <div class="logo">ZA</div>
+    <ul class="nav-links">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>PORTFOLIO</li>
+      <li>CONTACT</li>
+      <li class="hire-me">HIRE ME!</li>
+    </ul>
+    <div class="socials">
+      <img src="github.png" alt="GitHub">
+      <img src="linkedin.png" alt="LinkedIn">
+      <img src="drive.png" alt="Drive">
+      <img src="email.png" alt="Email">
+    </div>
+  </nav>
+
+  <!-- Center Content -->
+  <div class="container">
+    <div class="profile-img">
+      <img src="https://via.placeholder.com/180.png?text=Image" alt="Profile Image">
+    </div>
     <h1 class="name">ZAID</h1>
     <h1 class="surname">AKHALWAYA</h1>
-    <div class="profile-img">
-        <img src="https://via.placeholder.com/100x100.png?text=Image">
-    </div>
     <p class="intro">
       Hi, I’m a <span class="highlight">Full stack developer</span> and 
       <span class="highlight">Data engineer</span>
@@ -32,21 +53,21 @@
       Check out my skill set!
     </p>
     <a class="portfolio-btn" href="#">PORTFOLIO</a>
+  </div>
 
+  <!-- Left Sidebar (Now positioned bottom on mobile) -->
+  <section class="download">
+    <h2 class="dn-btn">DOWNLOAD CV</h2>
+  </section>
 </div>
-<!-- Download button-->
-        <section class="download">
-            <h2>DOWNLOAD CV</h2>
-        </section>
-        
-<!-- Portfolio button-->
-    <section class="portfolio">
-   
-    </section>
 
-    <section class="page2">
-        <div><h1>ABOUT</h1></div>
-    </section>
+<script>
+function toggleNav(btn) {
+  btn.classList.toggle("burgers");
+  document.getElementById("nav").classList.toggle("nav-open");
+}
+</script>
+</div>
 
     <!-- Link to the JavaScript file -->
     <script src="script.js"></script>
