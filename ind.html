@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flipped Download Button Demo</title>
+<style>
+  .download {
+    width: 120px;
+    background-color: #b29e84;
+    color: white;
+    writing-mode: vertical-rl;
+    text-align: center;
+    justify-content: center;
+    text-orientation: upright;
+    align-items: center;
+    display: flex;
+    font-size: 3.2em;
+    font-family: 'Gagalin', sans-serif;
+    padding: 1rem 0;
+    margin: 2rem;
+  }
+
+  @media (max-width: 568px) {
+    .download {
+      writing-mode: horizontal-tb !important;
+      text-orientation: initial !important;
+      width: 100% !important;
+      height: auto !important;
+      padding: 1rem 0 !important;
+      font-size: 2em !important;
+      border-radius: 0 !important;
+      background-color: #b29e84 !important;
+      color: white !important;
+
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+
+      position: fixed !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: 0 !important;
+
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+      z-index: 9999 !important;
+
+      transform: scaleX(1);
+    }
+
+    .download .dn-btn {
+      transform: scaleX(1);
+    }
+</style>
+</head>
+<body>
+
+<section class="download">
+  <h2 class="dn-btn">DOWNLOAD CV</h2>
+</section>
+
+</body>
+</html>

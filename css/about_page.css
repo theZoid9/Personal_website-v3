@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Gagalin';
+  src: url('../fonts/Gagalin-Regular.otf') format('opentype');
+}
+
+.aboutpage-wrapper {
+  display: block;
+  min-height: 100vh;
+
+  
+}
+
+
+.Abouthead {
+    display: flex;
+    font-family: 'Gagalin', sans-serif;
+    min-width:95%;
+    height: 90px;
+    font-size: 7rem;
+    margin: 0;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+
+
+.aboutpage-wrapper p {
+    color: white;              /* white text */
+    text-align: start;        /* center-align text */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 2rem;
+    max-width: 100%;
+    margin-left: 300px ;
+    
+}
+
+.aboutpage-wrapper .personal-info {
+    font-size: 3rem;
+    font-family: 'Gagalin', sans-serif;
+}
+
+
+.personalinfo {
+  display: flex;
+  gap: 200px; /* spacing between text and image */
+  align-items: flex-start;
+  margin-left: 300px;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img{
+    display: flex;
+     justify-content: center;
+    border: 10px solid green;
+    width: 1000px;
+    height: 500px;
+}
+
+.interests {
+    font-size: 3rem;
+    font-family: 'Gagalin', sans-serif;
+}
