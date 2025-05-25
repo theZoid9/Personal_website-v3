@@ -6,6 +6,10 @@
     <title>Personal Webpage</title>
     <link rel="stylesheet" href="./css/home_page.css">
     <link href="https://fonts.bunny.net/css?family=gagalin" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 
 </head>
 <body>
@@ -30,20 +34,24 @@
       <li class="hire-me">HIRE ME!</li>
     </ul>
     <div class="socials">
-      <img src="github.png" alt="GitHub">
-      <img src="linkedin.png" alt="LinkedIn">
-      <img src="drive.png" alt="Drive">
-      <img src="email.png" alt="Email">
+      <a href="https://github.com/theZoid9">
+            <i class="ri-github-fill ri-3x"></i>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1gbNKjRe_8z1RHio4SYwurzM-SiyXqx1V?usp=sharing">
+          <i class="ri-drive-fill ri-3x"></i>
+        </a>
+      <a href="" class="social-media">
+          <i class="ri-mail-send-line ri-3x"></i>
+      </a>
+
     </div>
   </nav>
-
-  <!-- Center Content -->
   <div class="container">
+    <h1 class="name">ZAID</h1>
+    <h1 class="surname">AKHALWAYA</h1>
     <div class="profile-img">
       <img src="https://via.placeholder.com/180.png?text=Image" alt="Profile Image">
     </div>
-    <h1 class="name">ZAID</h1>
-    <h1 class="surname">AKHALWAYA</h1>
     <p class="intro">
       Hi, I’m a <span class="highlight">Full stack developer</span> and 
       <span class="highlight">Data engineer</span>
@@ -62,14 +70,9 @@
 </div>
 
 <script>
-function toggleNav(btn) {
-  btn.classList.toggle("burgers");
-  document.getElementById("nav").classList.toggle("nav-open");
-}
+
 </script>
 </div>
-
-    <!-- Link to the JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
