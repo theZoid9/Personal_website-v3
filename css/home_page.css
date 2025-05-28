@@ -65,7 +65,7 @@ body {
 }
 
 .intro {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin: 1rem 0;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .desc {
-  font-size: 2.0rem;
+  font-size: 1.4rem;
   text-align: center;
   max-width: 400px;
   margin-bottom: 1.5rem;
@@ -85,7 +85,7 @@ body {
   background-color: #b29e84;
   color: white;
   font-family: 'Gagalin', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 22px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -139,6 +139,7 @@ body {
 .hire-me {
   color: #00c26e;
   font-weight: bold;
+  
 }
 
 .socials {

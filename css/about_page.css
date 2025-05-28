@@ -4,110 +4,98 @@
 }
 
 .aboutpage-wrapper {
-  display: block;
-  min-height: 100vh;
-
-  
-}
-
-
-.Abouthead {
-    display: flex;
-    font-family: 'Gagalin', sans-serif;
-    min-width:95%;
-    height: 90px;
-    font-size: 7rem;
-    margin: 0;
-    padding-bottom: 100px;
-    justify-content: center;
-}
-
-
-
-.aboutpage-wrapper p {
-    color: white;              /* white text */
-    text-align: start;        /* center-align text */
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    font-size: 2rem;
-    max-width: 100%;
-    margin-left: 300px ;
-    
-}
-
-.aboutpage-wrapper .personal-info {
-    font-size: 3rem;
-    font-family: 'Gagalin', sans-serif;
-}
-
-
-.personalinfo {
-  display: flex;
-  gap: 200px; /* spacing between text and image */
-  align-items: flex-start;
-  margin-left: 300px;
-}
-
-.text-info {
   display: flex;
   flex-direction: column;
-}
-
-.about-img{
-    display: flex;
-    justify-content: center;
-    border: 10px solid green;
-    width: 1000px;
-    height: 500px;
-}
-
-.interests {
-    font-size: 3rem;
-    font-family: 'Gagalin', sans-serif;
-}
-
-
-@media (max-width: 568px) {  
-.aboutpage-wrapper {
-  display: block;
+  align-items: flex-start; /* start by default for desktop */
+  justify-content: flex-start;
   min-height: 100vh;
-
-  
+  padding: 100px 20px 20px 320px; /* left push for web */
+  box-sizing: border-box;
 }
 
-  .burger {
-    display: block;
-    position: fixed;
-    margin-left: 20px;
-    top: 15px;
-    z-index: 9999;
-    background-color:transparent;
-    padding: 10px;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
+.Abouthead {
+  font-family: 'Gagalin', sans-serif;
+  font-size: 6rem;
+  margin: 0 0 2rem 0;
+  color: white;
+  text-align: start;
+}
+
+.aboutpage-wrapper p {
+  color: white;
+  text-align: start;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0;
+}
+
+.personalinfo {
+      display: block;
+      gap: 40px;
+      margin-top: 40px;
+      align-items: flex-start;
+      font-family: 'Gagalin', sans-serif;
+    }
+
+
+.text-info, .img-flex-container {
+      max-width: 800px;
+    }
+
+.personal-info, .interests {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+.details, .all-interests {
+      
+      padding: 0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      margin-top: 20px;
+      font-size: 1.3rem;
+    }
+
+.details li, .all-interests li {
+      margin-bottom: 8px;
+    }
+
+
+@media (max-width: 568px) {
+  .aboutpage-wrapper {
+    padding: 40px 20px;
+    align-items: center; 
+    text-align: center;
   }
 
-.bar1, .bar2, .bar3 {
-   
-    background-color: #ffffff;
-    width: 30px;
-    height: 4px;
-    margin: 5px 0;
-    transition: 0.4s;
-}
+  .Abouthead {
+    margin-top: 100px;
+    font-size: 3.5rem;
+    text-align: center;
+  }
 
-.burgers .bar1 {
-  transform: translateY(9px) rotate(-45deg);
-}
+  .aboutpage-wrapper p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90vw;
+    max-width: 568px;
+  }
 
-.burgers .bar2 {
-  opacity: 0;
-}
+  .personalinfo {
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
 
-.burgers .bar3 {
-  transform: translateY(-9px) rotate(45deg);
-}  
-  
+  .text-info, .img-flex-container {
+        max-width: 100%;
+      }
 
+  .personal-info, .interests {
+        text-align: center;
+      }
 }
