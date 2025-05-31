@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'Gagalin';
-  src: url('../fonts/Gagalin-Regular.otf') format('opentype');
-}
-
-.portfolio-page {
-  min-height: 100vh;
-}
