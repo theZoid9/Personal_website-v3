@@ -9,8 +9,9 @@
   align-items: flex-start; /* start by default for desktop */
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 100px 20px 20px 320px; /* left push for web */
   box-sizing: border-box;
+  margin-left:300px;
+
 }
 
 .Abouthead {
@@ -19,6 +20,7 @@
   margin: 0 0 2rem 0;
   color: white;
   text-align: start;
+  
 }
 
 .aboutpage-wrapper p {
@@ -29,34 +31,39 @@
   font-size: 1.5rem;
   max-width: 700px;
   margin: 0;
+  
 }
 
 .personalinfo {
+     
       display: block;
       gap: 40px;
-      margin-top: 40px;
+      margin-top: 50px;
       align-items: flex-start;
       font-family: 'Gagalin', sans-serif;
+      
     }
 
 
 .text-info, .img-flex-container {
       max-width: 800px;
+      margin: 0px;
     }
 
 .personal-info, .interests {
       font-size: 2.5rem;
       margin-bottom: 60px;
       color: #ffffff;
+      margin: 0;
+      
     }
 
 .details, .all-interests {
-      
+  
       padding: 0;
-      margin: 0;
       font-family: Arial, sans-serif;
-      margin-top: 20px;
       font-size: 1.3rem;
+      margin: 20px;
     }
 
 .details li, .all-interests li {
@@ -72,12 +79,16 @@
   }
 
   .Abouthead {
-    margin-top: 100px;
+    position: relative;
+    right: 150px;
+    bottom: 20px;
     font-size: 3.5rem;
-    text-align: center;
+    text-align: start;
   }
 
   .aboutpage-wrapper p {
+    position: relative;
+    right: 150px;
     font-size: 1.2rem;
     text-align: center;
     width: 90vw;
@@ -85,7 +96,9 @@
   }
 
   .personalinfo {
-        margin-top: 100px;
+        position: relative;
+        right: 150px;
+        margin-top: 50px;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -93,6 +106,7 @@
 
   .text-info, .img-flex-container {
         max-width: 100%;
+
       }
 
   .personal-info, .interests {

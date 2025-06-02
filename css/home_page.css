@@ -43,20 +43,26 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+
 }
 
 
 .profile-img img {
   display: flex;
-  min-width:280px;
-  height: 280px;
+  position: absolute;
+  left: 580px;
+  bottom: 250px;
+  min-width:300px;
+  height: 380px;
   object-fit: cover;
   transform: rotate(-15deg);
   border-radius: 10px;
   margin-bottom: 1.5rem;
+  border: 3px solid red;
 }
 
 .name, .surname {
+  
   font-size: 6rem;
   font-weight: bold;
   font-family: 'Gagalin', sans-serif;
@@ -64,9 +70,24 @@ body {
   text-shadow: 1px 1px 3px black;
 }
 
+.name{
+  position: relative;
+  left: 100px;
+}
+
+.surname {
+  position: relative;
+  left: 300px;
+}
+
 .intro {
-  font-size: 2.0rem;
+  position: relative;
+  left: 420px;
+  top: 50px;
+  font-size: 1.5rem;
   margin: 1rem 0;
+  width: 760px;
+  height: 100px;
 }
 
 .highlight {
@@ -75,6 +96,9 @@ body {
 }
 
 .desc {
+  position: relative;
+  left: 300px;
+  margin-top: 0;
   font-size: 1.4rem;
   text-align: center;
   max-width: 400px;
@@ -82,6 +106,8 @@ body {
 }
 
 .portfolio-btn {
+  position: relative;
+  left: 300px;
   background-color: #b29e84;
   color: white;
   font-family: 'Gagalin', sans-serif;
@@ -178,7 +204,7 @@ body {
    
 }
 
-  .burger {
+.burger {
     display: block;
     position: fixed;
     margin-left: 20px;
@@ -214,6 +240,8 @@ body {
   
 
 .name, .surname {
+  position: relative;
+  left: 0px;
   font-size: 3.5rem;
   font-weight: bold;
   font-family: 'Gagalin', sans-serif;
@@ -223,7 +251,10 @@ body {
 
 
 .profile-img img {
-  display: flex;
+  position: relative;
+  left: 0;
+  bottom: 1px;
+  margin-top: 20px;
   min-width:130px;
   height: 130px;
   object-fit: cover;
@@ -234,19 +265,34 @@ body {
 
 }
 
+.intro {
+  position: relative;
+  left: 5px;
+  top: 2px;
+  width: 180px;
+  font-size: 1.5rem;
+}
+
 .desc {
+  position: relative;
+  left: 5px;
+  top: 2px;
+  width: 180px;
   font-size: 1.0rem;
   text-align: center;
   max-width: 400px;
+  margin-top: 20px;
   margin-bottom: 1.5rem;
 }
 
 
-  .portfolio-btn {
+.portfolio-btn {
   font-size: 1.5rem;
+  position: relative;
+  left: 0;
 }
 
-  .nav {
+.nav {
     display: none;
   }
 
@@ -261,7 +307,7 @@ body {
   }
 
 
-  .nav.nav-open {
+.nav.nav-open {
     display: flex;
     flex-direction: column;
     position: absolute;
