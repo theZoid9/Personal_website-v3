@@ -1,0 +1,31 @@
+
+
+@media (max-width: 568px) {
+
+    .portfolio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        border: 3px solid ;
+    }
+
+    .portfolio-box {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3px solid red ;
+    width: 300px;
+    height: 300px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .project1, .project2 ,.project3 {
+        border: 2px solid;
+        width: 100px;
+        height: 50px;
+        padding: 20px;
+        justify-content: center;
+    }
+}

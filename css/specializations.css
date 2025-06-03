@@ -18,7 +18,7 @@
 }
 
 .specializations {
-  min-height: 100vh;
+
   
 }
 
@@ -88,12 +88,11 @@
  
 }
   .heading-h5 {
-  margin-left: 50px;
-  
+  margin-left: 100px;
 }
 
 .specializations {
-  min-height: 100vh;
+  min-height: 0vh;
 }
 
 .w-layout-grid {
@@ -108,7 +107,7 @@
 .grid-split-work {
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  margin-left: 30px;
+  margin-left: 130px;
 }
 
 
