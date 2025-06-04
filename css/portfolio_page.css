@@ -7,7 +7,6 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        border: 3px solid ;
     }
 
     .portfolio-box {
@@ -21,8 +20,8 @@
 
     .project1, .project2 ,.project3 {
         border: 2px solid;
-        width: 100px;
-        height: 50px;
+        width: 300px;
+        height: 300px;
         padding: 20px;
         justify-content: center;
     }
