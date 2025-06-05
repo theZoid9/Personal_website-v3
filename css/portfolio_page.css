@@ -3,6 +3,7 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
+
 @media (max-width: 568px) {
 
     .portfolio {
@@ -10,11 +11,14 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        margin-top: 200px;
         
     }
 
     .portfolio h2{
         margin-bottom: 110px;
+        font-size: 3rem;
+        font-family: 'Gagalin', sans-serif;
     }
 
     .portfolio-box {
