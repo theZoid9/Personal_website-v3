@@ -9,13 +9,13 @@
 }
 
 .specializations {
-    margin-top: 20px; 
+    bottom: 100px;
+  
 }
 
 .heading-h5 {
-  
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
   margin-top: 0px;
   margin-left: 300px;
   font-size: 2.5rem;
@@ -23,9 +23,7 @@
 }
 
 
-
 .w-layout-grid {
-  
   grid-row-gap: 16px;
   grid-column-gap: 16px;
   grid-template-rows: auto auto;
@@ -33,15 +31,13 @@
   grid-auto-columns: 1fr;
   display: grid;
   position: relative;
-  bottom: 200px;
-  
+  bottom: 160px;
 }
 
 .grid-split-work {
-  
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  margin-left: 300px;
+  margin-left: 320px;
 }
 
 .split-work-item {
@@ -93,19 +89,19 @@
  
 }
   .heading-h5 {
-  margin-left: 80px;
+  margin-left: 130px;
+  bottom: 200px;
 }
 
 .specializations {
   margin-top: 50px;
 }
 
-
-
 .grid-split-work {
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  margin-left: 130px;
+  margin-left: 100px;
+  bottom: 200px;
 }
 
 
