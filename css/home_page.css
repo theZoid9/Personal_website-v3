@@ -11,8 +11,6 @@ body {
   font-family: sans-serif;
 }
 
-/* ===== Layout ===== */
-
 .homepage-wrapper {
   display: flex;
   min-height: 100vh;
@@ -122,7 +120,7 @@ body {
   color: #253439;
 }
 
-/* ===== Nav ===== */
+
 .nav {
   position: fixed;
   top: 0;
@@ -187,14 +185,10 @@ body {
 }
 
 
-
-
-/* ===== Burger Menu ===== */
 .burger {
   display: none;
 }
 
-/* ========== MOBILE STYLES ONLY (max-width: 768px) ========== */
 @media (max-width: 568px) {  
 .homepage-wrapper {
   display: flex;
@@ -330,11 +324,6 @@ body {
   .nav .socials {
     display: none;
   }
-
-}
-
-/* ========== DESKTOP FIX (min-width: 769px) ========== */
-@media (min-width: 769px) {
 
 }
 
