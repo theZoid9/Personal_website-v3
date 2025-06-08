@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #253439;
+  background-color: #f2f1ec;
   color: white;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
 .download {
   width: 100px;
   background-color: #b29e84;
-  color: white;
+  color: #253439;
   writing-mode: vertical-rl;
   text-orientation: upright;
   text-align: center;
@@ -30,7 +30,7 @@ body {
 }
 
 .download:hover {
-  color: #253439;
+  color: #289dd2;
 }
 
 .container {
@@ -62,10 +62,9 @@ body {
 .name, .surname {
   
   font-size: 6rem;
-  font-weight: bold;
   font-family: 'Gagalin', sans-serif;
   margin: 0.2rem 0;
-  text-shadow: 1px 1px 3px black;
+  color: #365b6d;
 }
 
 .name{
@@ -86,10 +85,11 @@ body {
   margin: 1rem 0;
   width: 760px;
   height: 100px;
+  color: #289dd2;
 }
 
 .highlight {
-  color: #00c26e;
+  color: #41c1ba;
   font-weight: bold;
 }
 
@@ -101,13 +101,14 @@ body {
   text-align: center;
   max-width: 400px;
   margin-bottom: 1.5rem;
+  color: #289dd2;
 }
 
 .portfolio-btn {
   position: relative;
   left: 300px;
-  background-color: #b29e84;
-  color: white;
+  background-color: #365b6d;
+  color: #ffffff;
   font-family: 'Gagalin', sans-serif;
   font-size: 1.5rem;
   padding: 22px 20px;
@@ -127,8 +128,9 @@ body {
   left: 0;
   height: 100vh;
   width: 250px;
-  background-color: #1e2b2f;
-  color: white;
+  background-color: #f2f1ec;
+  border: 2px solid #365b6d;
+  color: #365b6d;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,11 +159,11 @@ body {
 }
 
 .nav-links li:hover {
-    color: #686e6b;
+    color: #289dd2;
 }
 
 .hire-me {
-  color: #00c26e;
+  color: #41c1ba;
   font-weight: bold;
   
 }
@@ -170,18 +172,19 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 1rem;
-  border-top: 2px solid white;
+  border-top: 2px solid #365b6d;
   margin-bottom: 20px;
+ 
 
 }
 
 .socials a{
-  color: #ffffff;
+  color: #365b6d;
   text-decoration: none;
 }
 
 .socials a:hover {
-  color: #00c26e;
+  color: #289dd2;
 }
 
 
@@ -212,7 +215,6 @@ body {
   }
 
 .bar1, .bar2, .bar3 {
-   
     background-color: #ffffff;
     width: 30px;
     height: 4px;

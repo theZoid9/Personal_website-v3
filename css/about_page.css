@@ -9,6 +9,7 @@
   margin-left: 220px;
   font-family: 'Gagalin';
   font-size: 5rem;
+  color: #365b6d;
 }
 
 .personalinfo {
@@ -26,6 +27,7 @@
   text-align: center;
   width: 90vw;
   max-width: 100%;
+  color: #365b6d;
 }
 
 .personal-box {
@@ -34,6 +36,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 80px;
+  color: #365b6d;
 
 }
 
@@ -43,6 +46,7 @@
   padding: 0;
   gap: 10px;
   font-size: 1.5rem;
+  color: #365b6d;
 }
 
 .personal-info {
