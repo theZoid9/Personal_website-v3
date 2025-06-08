@@ -214,7 +214,7 @@ body {
 
 .burger {
     display: block;
-    position: fixed;
+    position: relative;
     margin-left: 20px;
     top: 15px;
     z-index: 9999;
@@ -226,7 +226,7 @@ body {
   }
 
 .bar1, .bar2, .bar3 {
-    background-color: #ffffff;
+    background-color: #365b6d;
     width: 30px;
     height: 4px;
     margin: 5px 0;
@@ -320,10 +320,12 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: #1d2a2f;
+    width: 50%;
+    height: 60%;
+    background-color: #c7c7c7;
     z-index: 1000;
     padding: 2rem 1rem;
+    
   }
 
   .nav.nav-open .socials {
