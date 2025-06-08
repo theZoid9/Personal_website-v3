@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/about_page.css">
     <link rel="stylesheet" href="../css/progress_page.css">
     <link rel="stylesheet" href="../css/portfolio_page.css">
+    <link rel="stylesheet" href="../css/contact_page.css">
     <link href="https://fonts.bunny.net/css?family=gagalin" rel="stylesheet">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
@@ -22,15 +23,15 @@
 </button>
 
 
-<div class="homepage-wrapper">
+<div class="homepage-wrapper" id="Home">
 
   <nav class="nav" id="nav">
     <div class="logo">ZA</div>
     <ul class="nav-links">
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>PORTFOLIO</li>
-      <li>CONTACT</li>
+      <li><a href="#Home">HOME</a></li>
+      <li><a href="#About">ABOUT</a></li>
+      <li><a href="#Progress">Progress</a></li>
+      <li><a href="#Contact">CONTACT</a></li>
       <li class="hire-me"> HIRE ME!</li>
     </ul>
     <div class="socials">
@@ -63,13 +64,13 @@
   </div>
 
   <section class="download">
-    <h2 class="dn-btn">DOWNLOAD CV</h2>
+    <h2 class="dn-btn"><a href="https://drive.google.com/file/d/1dQ8FpmsySTgGd2SNGv2PvBZykRW0WACw/view?usp=sharing"> DOWNLOAD CV</a></h2>
   </section>
 </div>
 
 
 
-<section class="aboutpage-wrapper">
+<section class="aboutpage-wrapper" id="About">
 <h1 class="Abouthead">
   ABOUT ME
 </h1>
@@ -111,7 +112,7 @@
 </div>
 </section>
 
-<section class="specializations">
+<section class="specializations" id="Progress">
     <h4 class="heading-h5">Progress:</h4>
 <div class="w-layout-grid grid-split-work">
   <div class="split-work-item">
@@ -177,6 +178,24 @@
 </section>
 
 </div>
+ <div class="container-contact">
+  <h1>Contact Me</h1>
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
+
     <script src="../script.js"></script>
 </body>
 </html>
