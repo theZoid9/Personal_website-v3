@@ -4,13 +4,16 @@
 }
 
 .Abouthead {
+    width: calc(100% - 300px); /* subtract sidebar width */
+  margin-left: 300px;
   display: flex;
   justify-content: center;
-  margin-left: 220px;
   font-family: 'Gagalin';
   font-size: 5rem;
   color: #365b6d;
 }
+
+
 
 .personalinfo {
   margin-left: 300px
@@ -23,10 +26,10 @@
 }
 
 .para {
+  
   font-size: 1.8rem;
   text-align: center;
-  width: 90vw;
-  max-width: 100%;
+
   color: #365b6d;
 }
 

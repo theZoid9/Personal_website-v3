@@ -3,29 +3,42 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
-.progress {
+.my-projects {
+    width: calc(100% - 300px); /* subtract sidebar width */
   margin-left: 300px;
-  padding: 240px;
-  margin-bottom: 100px;
+  font-size: 5rem;
+  font-family: 'Gagalin', sans-serif;
+  color: #365b6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 400px;
+  width: calc(100% - 300px); /* subtract sidebar width */
+  margin-left: 300px;
 }
 
 .progress h1{
   color: #000;
 }
 
-.progress h2 {
-  font-size: 4rem;
-  font-family: 'Gagalin', sans-serif;
-  margin-bottom: 100px;
-  position: relative;
-  text-align: center;
-  color: #365b6d;
-}
+
 
 .progress-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  justify-content: center;
+    width: calc(100% - 300px); /* subtract sidebar width */
+  margin-left: -150px;
   gap: 40px;
+  height: 350px;
   
 }
 
@@ -36,9 +49,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   border-radius: 999px;
-  width: 350px;
+  width: 250px;
+ 
 }
 
 .progress-card img {
@@ -72,9 +86,9 @@
 @media (max-width: 568px) {
  
  .progress {
-  margin-left: -220px;
-  padding: 240px;
-  margin-bottom: 100px;
+      min-width: 350px;
+    border: 2px solid;
+  
 }
 
 
@@ -88,12 +102,18 @@
 
   .progress-box {
     grid-template-columns: 1fr;
+
   }
 
   .progress-card {
-  border-radius: 0px;
+
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  border-radius: 999px;
+  width: 350px;
 }
 }
