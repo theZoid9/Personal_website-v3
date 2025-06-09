@@ -123,8 +123,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
+
+
 .portfolio-btn:hover {
-  color: #253439;
+  color: #438fa8;
 }
 
 
