@@ -270,10 +270,10 @@ body {
   min-width:130px;
   height: 130px;
   object-fit: cover;
-  transform: rotate(-15deg);
+  transform: rotate(0deg);
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  border: 3px solid rgb(204, 0, 0);
+
 
 }
 
