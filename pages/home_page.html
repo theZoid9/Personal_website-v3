@@ -13,14 +13,14 @@
     <link href="https://fonts.bunny.net/css?family=gagalin" rel="stylesheet">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    rel="stylesheet">
 </head>
 <body>
 
 <button class="burger" onclick="toggleNav(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
+  <span class="bar1"></span>
+  <span class="bar2"></span>
+  <span class="bar3"></span>
 </button>
 
 
@@ -59,10 +59,10 @@
       <span class="highlight">Data engineer</span>
     </p>
     <p class="desc">
-      Hey, are you looking for a developer/data engineer?<br />
+      Hey, are you looking for a developer/data engineer?<br>
       Check out my skill set!
     </p>
-    <a class="portfolio-btn" href="portfolio_page.html" target="_blank">PORTFOLIO</a>
+    
   </div>
 
   <section class="download">
@@ -73,9 +73,9 @@
 
 
 <section class="aboutpage-wrapper" id="About">
-<h1 class="Abouthead">
+<h2 class="Abouthead">
   ABOUT ME
-</h1>
+</h2>
 
   <div class="personalinfo">
   <div class="text-info">
@@ -107,8 +107,6 @@
         <li >Gaming</li>
      </ul>
   </div>
-
-
    </div>
 
 </div>
@@ -119,32 +117,32 @@
   
   <div class="split-work-item">
     <div class="split-work-info">
-      <div class="split-work-category">Umuzi Python Projects</div>
-      <div class="work-badge-dark">10 Project</div>
+      <h2 class="split-work-category">Umuzi Python Projects</h2>
+      <h2 class="work-badge-dark">10 Project</h2>
     </div>
   </div>
   <div class="split-work-item">
     <div class="split-work-info">
-      <div class="split-work-category">Umuzi Javascript Projects</div>
-      <div class="work-badge-dark">5 Project</div>
+      <h2 class="split-work-category">Umuzi Javascript Projects</h2>
+      <h2 class="work-badge-dark">5 Project</h2>
     </div>
   </div>
   <div class="split-work-item">
     <div class="split-work-info">
-      <div class="split-work-category">Front end development</div>
-      <div class="work-badge-dark">3 Project</div>
+      <h2 class="split-work-category">Front end development</h2>
+      <h2 class="work-badge-dark">3 Project</h2>
     </div>
   </div>
   <div class="split-work-item">
     <div class="split-work-info">
-      <div class="split-work-category">Backend development</div>
-      <div class="work-badge-dark">2 Project</div>
+      <h2 class="split-work-category">Backend development</h2>
+      <h2 class="work-badge-dark">2 Project</h2>
     </div>
   </div>
   <div class="split-work-item">
     <div class="split-work-info">
-      <div class="split-work-category">Umuzi Pull Request Reviews</div>
-      <div class="work-badge-dark">267</div>
+      <h2 class="split-work-category">Umuzi Pull Request Reviews</h2>
+      <h2 class="work-badge-dark">267</h2>
     </div>
   </div>
 </div>
@@ -157,7 +155,7 @@
   <div class="progress-box">
     
     <div class="progress-card">
-      <h1>Sliding Tiles</h1>
+      <h2>Sliding Tiles</h2>
         <div class="logo-row">
           <img src="../logos/js.svg" alt="Python" class="logo">
           <img src="../logos/html.svg" alt="Tkinter" class="logo">
@@ -165,27 +163,28 @@
        </div>
       <img src="../img/sliding2.gif" alt="Project 1">
       <div class="progress-btns">
-        <a href="https://slidingtile.netlify.app/" target="_blank"><button>View</button></a>
-        <a href="https://github.com/theZoid9/Sliding-tiles" target="_blank"><button>Github</button></a>
+        <button onclick="window.open('https://slidingtile.netlify.app/', '_blank')">View</button>
+        <button onclick="window.open('https://github.com/theZoid9/Sliding-tiles', '_blank')">Github</button>
+       
       </div>
     </div>
 
     <div class="progress-card">
-      <h1>Data Wrangling</h1>
+      <h2>Data Wrangling</h2>
               <div class="logo-row">
           <img src="../logos/python(1).svg" alt="Python" class="logo">
           <img src="../logos/jupyter-seeklogo.svg" alt="Tkinter" class="logo">
           <img src="../logos/github.svg" alt="PDF" class="logo">
        </div>
-      <img src="../img/data wrangle.gif" alt="Project 2">
+      <img src="../img/data_wrangle.gif" alt="Project 2">
       <div class="progress-btns">
-        <a href="https://github.com/theZoid9/Data-wrangling/blob/main/notebook/data_wrangling.ipynb" target="_blank"><button>View</button></a>
-        <a href="https://github.com/theZoid9/Data-wrangling" target="_blank"><button>Github</button></a>
+       <button onclick="window.open('https://github.com/theZoid9/Data-wrangling/blob/main/notebook/data_wrangling.ipynb')">View</button>
+       <button onclick="window.open('https://github.com/theZoid9/Data-wrangling')">Github</button>
       </div>
     </div>
 
     <div class="progress-card">
-      <h1>PDF Viewer</h1>
+      <h2>PDF Viewer</h2>
         <div class="logo-row">
           <img src="../logos/python(1).svg" alt="Python" class="logo">
           <img src="../logos/tk-svgrepo-com.svg" alt="Tkinter" class="logo">
@@ -193,15 +192,14 @@
        </div>
       <img src="../img/pdf2.gif" alt="Project 3">
       <div class="progress-btns">
-        <a href="https://github.com/theZoid9/Data-wrangling/blob/main/notebook/data_wrangling.ipynb" target="_blank"><button>View</button></a>
-        <a href="https://github.com/theZoid9/PDFviewer" target="_blank"><button>Github</button></a>
+        <button>View</button>
+       <button onclick="window.open('https://github.com/theZoid9/PDFviewer')">Github</button>
       </div>
     </div>
+  </div>
 </section>
-
-</div>
  <div class="container-contact">
-  <h1>Contact Me</h1>
+  <h2>Contact Me</h2>
   <form action="action_page.php">
 
     <label for="fname">First Name</label>

@@ -90,7 +90,7 @@
 }
 
 
-@media (max-width: 568px) {
+@media (max-width:  1600px) {
   .Abouthead {
     display: flex;
     justify-content: center;

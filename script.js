@@ -1,4 +1,4 @@
 function toggleNav(btn) {
-  btn.classList.toggle("burgers");
+  btn.classList.toggle("change");
   document.getElementById("nav").classList.toggle("nav-open");
 }

@@ -42,7 +42,7 @@ input[type=submit]:hover {
     color: #000000;
 }
 
-.container-contact h1 {
+.container-contact h2 {
     color: #365b6d;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ input[type=submit]:hover {
 
 
 
-@media (max-width: 568px) {
+@media (max-width: 1600px) {
   .container-contact {
     margin: 20px;
     margin-top: 0;

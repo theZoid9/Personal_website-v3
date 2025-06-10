@@ -112,25 +112,6 @@ body {
   color: #2f4b57;
 }
 
-.portfolio-btn {
-  position: relative;
-  left: 300px;
-  background-color: #365b6d;
-  color: #ffffff;
-  font-family: 'Gagalin', sans-serif;
-  font-size: 1.5rem;
-  padding: 22px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-
-
-.portfolio-btn:hover {
-  color: #289dd2;
-}
-
 
 .nav {
   position: fixed;
@@ -208,7 +189,7 @@ body {
   display: none;
 }
 
-@media (max-width: 568px) {  
+@media (max-width: 1600px) {  
 .homepage-wrapper {
   display: flex;
   flex-direction: column;
@@ -218,37 +199,39 @@ body {
 }
 
 .burger {
-    display: block;
-    position: relative;
-    margin-left: 20px;
-    top: 15px;
-    z-index: 9999;
-    background-color:transparent;
-    padding: 10px;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-  }
-
-.bar1, .bar2, .bar3 {
-    background-color: #365b6d;
-    width: 30px;
-    height: 4px;
-    margin: 5px 0;
-    transition: 0.4s;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  
 }
 
-.burgers .bar1 {
-  transform: translateY(9px) rotate(-45deg);
+.burger span {
+  display: block;
+  position: relative;
+  z-index: 1999;
+  width: 30px;
+  height: 4px;
+  margin: 6px auto;
+  background-color: #333;
+  transition: 0.3s ease;
+  transform-origin: center;
 }
 
-.burgers .bar2 {
+/* When toggled */
+.burger.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.burger.change .bar2 {
   opacity: 0;
 }
 
-.burgers .bar3 {
-  transform: translateY(-9px) rotate(45deg);
-}  
+.burger.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
   
 
 .name, .surname {
@@ -299,12 +282,6 @@ body {
 }
 
 
-.portfolio-btn {
-  font-size: 1.5rem;
-  position: relative;
-  left: 0;
-}
-
 .nav {
     display: none;
   }
@@ -333,14 +310,6 @@ body {
     z-index: 1000;
     padding: 2rem 1rem;
     
-  }
-
-  .nav.nav-open .socials {
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
- 
   }
 
   .nav .socials {
