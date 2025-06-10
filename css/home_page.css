@@ -93,7 +93,7 @@ body {
   margin: 1rem 0;
   width: 760px;
   height: 100px;
-  color: #289dd2;
+  color: #2f4b57;
 }
 
 .highlight {
@@ -109,7 +109,7 @@ body {
   text-align: center;
   max-width: 400px;
   margin-bottom: 1.5rem;
-  color: #289dd2;
+  color: #2f4b57;
 }
 
 .portfolio-btn {
@@ -128,7 +128,7 @@ body {
 
 
 .portfolio-btn:hover {
-  color: #438fa8;
+  color: #289dd2;
 }
 
 

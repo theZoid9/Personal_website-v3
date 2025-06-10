@@ -30,7 +30,7 @@
   color: #000;
   font-family: ' sans-serif';
   padding: 10px;
-    border: 1px solid black;
+    border: 2px solid #365b6d;
 
 }
 
@@ -49,7 +49,7 @@
 
 .progress-card {
   padding: 20px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid #365b6d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,8 +90,8 @@
   width: 100px;
   height: 35px;
   font-size: 1rem;
-  background-color: #ffffff;
-  color: #253439;
+  background-color: #365b6d;
+  color: #ffffff;
   font-weight: 900;
   font-size: 1.1rem;
  
@@ -100,7 +100,7 @@
 }
 
 .progress-btns button:hover{
-    background-color: #289dd2;
+    background-color: #000000;
 }
 @media (max-width: 568px) {
   .my-projects,
