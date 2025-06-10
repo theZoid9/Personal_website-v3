@@ -21,49 +21,52 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
   width: calc(100% - 300px); /* subtract sidebar width */
   margin-left: 300px;
 }
 
 .progress h1{
   color: #000;
+  font-family: ' sans-serif';
+
 }
+
 
 
 
 .progress-box {
   display: flex;
   justify-content: center;
-    width: calc(100% - 300px); /* subtract sidebar width */
+  width: calc(100% - 300px); /* subtract sidebar width */
   margin-left: -150px;
   gap: 40px;
-  height: 350px;
+  height: 450px;
   
 }
 
 .progress-card {
-
   padding: 20px;
   border: 1px solid rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  border-radius: 999px;
   width: 250px;
  
 }
 
 .progress-card img {
   width: 100%;
-  height: 90px;
+  height: 300px;
   object-fit: contain;
 }
 
 .progress-btns {
   display: flex;
   gap: 10px;
+  margin-top: -50px;
+  border: 2px solid;
 }
 
 .progress-btns button {

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Gagalin';
+  src: url('../fonts/Gagalin-Regular.otf') format('opentype');
+}
+
 input[type=text], select, textarea {
   
   width: 100%; 
@@ -38,10 +43,12 @@ input[type=submit]:hover {
 }
 
 .container-contact h1 {
-    color: #000000;
+    color: #365b6d;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Gagalin';
+    font-size: 5rem;
 }
 
 

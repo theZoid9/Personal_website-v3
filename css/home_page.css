@@ -155,6 +155,11 @@ body {
   font-size: 5.8rem;
 }
 
+.hire-me {
+  font-weight: bold;
+  
+}
+
 .nav-links a{
  text-decoration: none;
  color: #365b6d;
@@ -177,11 +182,7 @@ body {
     color: #289dd2;
 }
 
-.hire-me {
-  color: #41c1ba;
-  font-weight: bold;
-  
-}
+
 
 .socials {
   display: flex;
