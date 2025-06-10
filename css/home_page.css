@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-    max-width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -85,16 +85,15 @@ body {
   left: 300px;
 }
 
-.intro {
-  position: relative;
-  left: 420px;
-  top: 50px;
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  width: 760px;
+.intro img{
+  display: flex;
+  width: 600px;
   height: 100px;
-  color: #2f4b57;
+  margin-left: 650px;
+
 }
+
+
 
 .highlight {
   color: #41c1ba;
@@ -195,6 +194,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-width: auto;
+  margin-top: -210px;
+ 
    
 }
 
@@ -260,13 +261,17 @@ body {
 
 }
 
-.intro {
-  position: relative;
-  left: 5px;
-  top: 2px;
-  width: 180px;
-  font-size: 1.5rem;
+.intro img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 210px;
+    align-items: center;
+    margin-left: 0px;
+
 }
+
+
 
 .desc {
   position: relative;
@@ -277,7 +282,7 @@ body {
   text-align: center;
   max-width: 400px;
   margin-top: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: -9.5rem;
   
 }
 
