@@ -29,6 +29,8 @@
 .progress h1{
   color: #000;
   font-family: ' sans-serif';
+  padding: 10px;
+    border: 1px solid black;
 
 }
 
@@ -62,11 +64,26 @@
   object-fit: contain;
 }
 
+
+
 .progress-btns {
   display: flex;
   gap: 10px;
   margin-top: -50px;
 
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  margin: -100px 30px;
+
+}
+
+.logo {
+  height: 10px;
+  
 }
 
 .progress-btns button {
@@ -77,7 +94,7 @@
   color: #253439;
   font-weight: 900;
   font-size: 1.1rem;
-  border: none;
+ 
   cursor: pointer;
   border-radius: 999px;
 }
