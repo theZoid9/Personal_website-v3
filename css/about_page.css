@@ -101,6 +101,7 @@
     padding: 0 10px;
     margin-left: 80px;
     width: 210px;
+   
   }
 
   .personalinfo {
@@ -119,6 +120,7 @@
     font-size: 1.2rem;
     text-align: center;
     width: 100%;
+    
   }
 
   .personal-box {
@@ -126,6 +128,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    
   }
 
   .details {
