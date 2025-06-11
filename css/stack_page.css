@@ -16,7 +16,7 @@
     font-family: 'Gagalin';
     display: flex;
     justify-content: center;
-  
+    flex-wrap: wrap;
     
 }
 
@@ -25,20 +25,24 @@
 .logo-stack {
     display: grid;
     grid-auto-flow: column;
-    gap: 100px;
+    gap: 50px;
     align-items: center;   
     justify-content: center;   
     padding: 10px;
     width: auto;
+    height: auto;
+    overflow-x: auto;
+
 }
 
 .logo-stack img {
     height: 100px;
     width: auto;
+    transition: transform 0.2s ease; /
 }
 
 .logo-stack img:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
     }
     
 
@@ -47,29 +51,41 @@
     .stack {
     min-height: 100vh;
     margin-bottom: 0px;
+  
+}
+
+
+
+    .stack h1 {
+        font-size: 3rem;
+        color: #365b6d;
+        font-family: 'Gagalin';
+        display: flex;
+        justify-content: center;
+    
+        
+    }
+
+    .logo-stack img {
+    height: 100px;
+    width: auto;
+}
 
 }
 
 
-    .logo-stack {
+
+@media (max-width:600px) {
+        .logo-stack {
     display: grid;
     grid-auto-flow: row;
     gap: 100px;
     align-items: center;   
     justify-content: center;   
     padding: 10px;
-   
     width: auto;
+    height: auto;
 }
 
-.stack h1 {
-    font-size: 3rem;
-    color: #365b6d;
-    font-family: 'Gagalin';
-    display: flex;
-    justify-content: center;
-  
     
-}
-
 }
