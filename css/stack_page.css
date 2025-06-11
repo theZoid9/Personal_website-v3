@@ -22,21 +22,54 @@
 
   
 
-.logo-row {
+.logo-stack {
     display: grid;
     grid-auto-flow: column;
     gap: 100px;
-    align-items: center;           /* Vertically align logos */
+    align-items: center;   
     justify-content: center;   
-    padding: 100px;
+    padding: 10px;
     width: auto;
 }
 
-.logo-row img {
+.logo-stack img {
     height: 100px;
     width: auto;
 }
 
-.logo-row img:hover {
-      transform: translateY(-10px); /* move up by 10px on hover */
+.logo-stack img:hover {
+      transform: translateY(-5px);
     }
+    
+
+@media (max-width: 1600px){
+
+    .stack {
+    min-height: 100vh;
+    margin-bottom: 0px;
+
+}
+
+
+    .logo-stack {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 100px;
+    align-items: center;   
+    justify-content: center;   
+    padding: 10px;
+   
+    width: auto;
+}
+
+.stack h1 {
+    font-size: 3rem;
+    color: #365b6d;
+    font-family: 'Gagalin';
+    display: flex;
+    justify-content: center;
+  
+    
+}
+
+}
