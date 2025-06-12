@@ -321,16 +321,19 @@ body {
 .nav.nav-open {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 50%;
     height: 60%;
+    gap: 50px;
     background-color: #f2f1ec;
     z-index: 1000;
     padding: 2rem 1rem;
+  
     
   }
+  
 
   .nav .socials {
     display: none;
