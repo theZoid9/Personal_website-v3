@@ -18,6 +18,12 @@ body {
   min-height: 100vh;
 }
 
+.dwn-box {
+    display: flex;
+    justify-content: end;
+    width: 600px;
+}
+
 .download a {
   text-decoration: none;
   color: #365b6d;
@@ -35,6 +41,7 @@ body {
   display: flex;
   font-size: 2.2em;
   font-family: 'Gagalin', sans-serif;
+
 }
 
 .download a:hover {
@@ -42,52 +49,58 @@ body {
 }
 
 .container {
-  flex: 1;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+ 
+  padding-left: 300px;
+}
 
+
+
+.profile-img{
+  display: flex;
+  margin-left: 0px;
+  padding-left: 150px;
 }
 
 
 .profile-img img {
-  display: flex;
-  position: absolute;
-  left: 580px;
-  bottom: 250px;
   min-width:300px;
   height: 380px;
   object-fit: cover;
   transform: rotate(-7deg);
   border-radius: 90px;
-  margin-bottom: 1.5rem;
   border: 2px solid #000000
 }
 
-.name, .surname {
-  
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 60px;
+  padding-top: 70px;
+}
+
+.name,
+.surname {
   font-size: 6rem;
   font-family: 'Gagalin', sans-serif;
-  margin: 0.2rem 0;
   color: #365b6d;
-
+  margin: 0; 
 }
 
 
 .name{
-  position: relative;
-  left: 100px;
   opacity: 0;
   transform: translateY(-50px);
   animation: dropDown 1s ease-out forwards;
 }
 
 .surname {
-  position: relative;
-  left: 300px;
   opacity: 0;
   transform: translateY(90px);
   animation: dropDown 1s ease-out forwards;
@@ -127,10 +140,28 @@ body {
 }
 
 
+
+
+.logo {
+  display: flex;
+  position: fixed;
+  font-family: 'Gagalin', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 5.8rem;
+  margin-left: 75px;
+ 
+ 
+}
+
+.hire-me {
+  font-weight: bold;
+  
+}
+
+
 .nav {
   position: fixed;
-  top: 0;
-  left: 0;
   height: 100vh;
   width: 250px;
   background-color: #f2f1ec;
@@ -139,20 +170,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
  
-}
-
-.logo {
-  font-family: 'Gagalin', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  font-size: 5.8rem;
-}
-
-.hire-me {
-  font-weight: bold;
-  
 }
 
 .nav-links a{
@@ -161,15 +179,20 @@ body {
 }
 .nav-links {
   list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-  text-align: center;
+  margin-top: 100px;
   font-family: 'Gagalin', sans-serif;
   color: #365b6d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  justify-content: center;
+
 }
 
 .nav-links li {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  margin-right: 30px;
   font-size: 2.8rem;
 }
 
@@ -203,52 +226,17 @@ body {
   display: none;
 }
 
-@media (max-width: 1600px) {  
+@media (max-width: 1800px) {  
 .homepage-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-width: auto;
-  margin-top: -60px;
- 
-   
+
 }
 
-.burger {
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px;
-  background: none;
-  border: none;
-  outline: none;
-  
+.container {
+  padding-left: 30px;
 }
 
-.burger span {
-  display: block;
-  position: relative;
-  z-index: 1999;
-  width: 30px;
-  height: 4px;
-  margin: 6px auto;
-  background-color: #333;
-  transition: 0.3s ease;
-  transform-origin: center;
-}
-
-
-.burger.change .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.burger.change .bar2 {
-  opacity: 0;
-}
-
-.burger.change .bar3 {
-  transform: rotate(45deg) translate(-6px, -6px);
-}
-  
 
 .name, .surname {
   position: relative;
@@ -271,7 +259,7 @@ body {
   object-fit: cover;
   transform: rotate(-5deg);
   border-radius: 10px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
 
 
 }
@@ -306,6 +294,11 @@ body {
     display: none;
   }
 
+.dwn-box {
+    min-width: 100%;
+       
+}
+
   
 .download {
     order: 2;
@@ -314,7 +307,7 @@ body {
     writing-mode: horizontal-tb;
     padding: 0;
     font-size: 1.6rem;
-    
+ 
   }
 
 
@@ -343,30 +336,40 @@ body {
 
 @media (max-width:600px) {
 
-  .profile-img img {
-  position: relative;
-  left: 0;
-  bottom: 1px;
-  margin-top: 20px;
-  min-width:100%;
-  height: 130px;
-  object-fit: cover;
+  .profile-img {
+  display: flex;
+  flex-direction: column-reverse;
   transform: rotate(0deg);
   border-radius: 10px;
-  margin-bottom: 1.5rem;
+  padding: 0;
+}
 
 
+
+.names {
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.intro {
+  margin: 0;
 }
 
 .desc {
-  position: relative;
-  margin-top: 0;
   font-size: 1.4rem;
-  text-align: center;
-  max-width: 400px;
-  margin-bottom: 1.5rem;
-  color: #2f4b57;
-  
+  border: 3px solid ;
+  margin: 0px;
 }
+
+.dwn-box{
+  margin: 0;
+  padding: 0;
+
+}
+
+.download {
+    padding-right:100px;
+    border: 2px solid black;
+  }
 
 }

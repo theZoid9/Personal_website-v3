@@ -4,7 +4,6 @@
 }
 
 .Abouthead {
-    width: calc(100% - 300px); /* subtract sidebar width */
   margin-left: 300px;
   display: flex;
   justify-content: center;
