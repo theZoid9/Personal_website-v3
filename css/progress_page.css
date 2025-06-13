@@ -4,12 +4,20 @@
 }
 
 
-
-.project {
-  display: grid;
-  grid-template-rows: repeat(auto-fit,minmax(220px, 1fr));
-  max-width: 1300px;
-  margin-left: 350px;
-  color: black;
+.grid-split-work {
+  display: flex;
+  flex-direction: column;       /* Stack items vertically */
+  align-items: center;          /* Center horizontally */
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
+.split-work-item {
+  background-color: #616161;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 600px;             /* Keep it nicely centered */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
