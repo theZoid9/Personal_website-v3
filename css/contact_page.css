@@ -5,8 +5,7 @@
 
 input[type=text], select, textarea {
   
-  width: 100%; 
-  padding: 12px; 
+  width: 100%;
   border: 1px solid #000000; 
   border-radius: 4px;
   box-sizing: border-box; 
@@ -24,6 +23,7 @@ input[type=submit] {
   border: none;
   border-radius: 999px;
   cursor: pointer;
+  
 }
 
 
@@ -35,8 +35,11 @@ input[type=submit]:hover {
 .container-contact {
   border-radius: 5px;
   margin-left: 300px;
-  margin-top: -400px;
-  padding: 200px;
+  margin-top: 0;
+
+}
+ form{
+  padding: 130px;
 }
 
 .container-contact label {
@@ -50,6 +53,9 @@ input[type=submit]:hover {
     justify-content: center;
     font-family: 'Gagalin';
     font-size: 5rem;
+    align-items: start;
+
+
 }
 
 
