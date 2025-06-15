@@ -25,6 +25,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+    
 }
 
 .para {
@@ -95,11 +96,6 @@
 
 
 @media (max-width:  1600px) {
-
-  .aboutpage-wrapper {
-
-  }
-
 
   .Abouthead {
     display: flex;
