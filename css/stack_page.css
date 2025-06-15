@@ -6,6 +6,7 @@
 
 .stack {
     min-height: 100vh;
+
 }
 
 .stack h2 {
@@ -41,3 +42,28 @@
       transform: translateY(-10px);
     }
     
+
+@media (max-width: 1600px) {
+.stack h2 {
+    font-size: 4rem;
+    color: #365b6d;
+    font-family: 'Gagalin';
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+}
+@media (max-width: 600px) {
+.stack h2 {
+    font-size: 3rem;
+    color: #365b6d;
+    font-family: 'Gagalin';
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+}

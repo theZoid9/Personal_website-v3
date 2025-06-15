@@ -3,8 +3,13 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
+.aboutpage-wrapper{
+  min-height: 100vh;
+  padding: 0;
+  margin-top: -100px;
+}
+
 .Abouthead {
-  margin-left: 300px;
   display: flex;
   justify-content: center;
   font-family: 'Gagalin';
@@ -90,6 +95,12 @@
 
 
 @media (max-width:  1600px) {
+
+  .aboutpage-wrapper {
+
+  }
+
+
   .Abouthead {
     display: flex;
     justify-content: center;
