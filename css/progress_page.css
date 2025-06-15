@@ -3,21 +3,66 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
-
-.grid-split-work {
+.heading-h5 {
+  color: #365b6d;
+  font-family: 'Gagalin';
   display: flex;
-  flex-direction: column;       /* Stack items vertically */
-  align-items: center;          /* Center horizontally */
+  justify-content: center;
+  font-size: 4rem;
+    margin-left: 300px; 
+ 
+}
+
+.w-layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  padding: 2rem;
+    margin-left: 300px; 
 }
 
 .split-work-item {
-  background-color: #616161;
-  border-radius: 12px;
-  padding: 1.5rem 2rem;
-  width: 100%;
-  max-width: 600px;             /* Keep it nicely centered */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.split-work-item:hover {
+  transform: translateY(-5px);
+}
+
+.split-work-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.split-work-category {
+  font-size: 1.25rem;
+  color: #365b6d;
+  margin: 0 0 0.5rem;
+}
+
+.work-badge-dark {
+  background-color: #365b6d;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 1768px) {
+
+  .heading-h5 {
+
+    margin-left: 0px; 
+ 
+}
+  .w-layout-grid {
+    margin-left: 0; /* Remove the space since nav is hidden/collapsed */
+    padding: 1rem;   /* Optional: tighter padding on smaller screens */
+  }
 }
