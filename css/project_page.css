@@ -4,7 +4,6 @@
 }
 
 .my-projects {
-    width: calc(100% - 300px); 
   margin-left: 300px;
   font-size: 5rem;
   font-family: 'Gagalin', sans-serif;
@@ -16,14 +15,12 @@
 
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
   align-items: center;
   justify-content: center;
   padding: 50px;
   padding-left: 700px;
   margin-left: 300px;
-
 
 }
 
