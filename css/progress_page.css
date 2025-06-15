@@ -27,6 +27,7 @@
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  width: 200px;
 }
 
 .split-work-item:hover {
@@ -57,7 +58,6 @@
 @media (max-width: 1768px) {
 
   .heading-h5 {
-
     margin-left: 0px; 
  
 }
