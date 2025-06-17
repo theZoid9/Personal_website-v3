@@ -6,9 +6,10 @@
 .container-contact {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers the heading + form */
-  margin-left: 300px; /* adjusts for your sidebar */
+  align-items: center;
+  margin-left: 300px; 
   padding: 40px 20px;
+
 }
 
 .contact-heading {
@@ -38,18 +39,47 @@
   gap: 20px;
 }
 
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .message-box {
   height: 120px;
   resize: vertical;
 }
 
 
-@media (max-width:1624px){
-.container-contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* centers the heading + form */
-  margin-left: 0px; /* adjusts for your sidebar */
-  padding: 40px 20px;
+
+@media (max-width: 1624px) {
+  .container-contact {
+    margin-left: 0px;
+    padding-left: 100px;
+  }
 }
+
+
+@media (max-width: 768px) {
+  .container-contact {
+    margin-left: 0;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    border: none; 
+  }
+
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .form {
+    padding: 20px;
+  }
 }

@@ -6,11 +6,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .footer-content {
   width: 100%;
   text-align: center;
+  margin-left:300px;
 }
 
 .footer-links {
@@ -32,7 +34,6 @@
 }
 @media (max-width: 1600px) {
   .site-footer {
-    width: 100%;
     padding: 30px 15px;
   }
 
@@ -44,4 +45,11 @@
   .footer-links a {
     font-size: 1.1rem;
   }
+
+  .footer-content {
+  width: 100%;
+  text-align: center;
+  margin-left: 0px;
+}
+
 }

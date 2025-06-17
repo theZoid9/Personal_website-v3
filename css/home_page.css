@@ -11,6 +11,8 @@ body {
   padding: 0;
   font-family: sans-serif;
   max-width: 100%; 
+ 
+  
 }
 
 .logoz {
@@ -268,7 +270,7 @@ body {
 
   .profile-img {
     display:flex;
-    padding-right: 400px;
+    margin-right: 400px;
     margin-top: 140px;
     min-width: 100%;
     flex-direction: column;
@@ -317,10 +319,12 @@ body {
 }
 
 @media (max-width: 1768px) {
+
   .topnav {
     display: block;
     width: 100%;
     font-family: Arial, sans-serif;
+ 
   }
 
   .nav-topbar {
