@@ -19,6 +19,7 @@ body {
   text-align: center;
   font-size: 5.8rem;
   padding-top: 50px;
+  min-width: 250px;
 }
 
 
