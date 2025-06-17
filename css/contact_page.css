@@ -3,74 +3,53 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
-input[type=text], select, textarea {
-  
-  width: 100%;
-  border: 1px solid #000000; 
-  border-radius: 4px;
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
-}
-
-
-input[type=submit] {
-  background-color: #365b6d;
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  
-}
-
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-
 .container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers the heading + form */
+  margin-left: 300px; /* adjusts for your sidebar */
+  padding: 40px 20px;
+}
+
+.contact-heading {
+  color: #365b6d;
+  font-family: 'Gagalin';
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  color: #365b6d;
+  font-family: 'Gagalin';
+  font-size: 2rem;
+}
+
+.form {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  background: #f5f5f5;
   border-radius: 5px;
-  margin-left: 300px;
-  margin-top: 0;
-
-}
- form{
-  padding: 130px;
+  box-shadow: 0 14px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.container-contact label {
-    color: #000000;
-}
-
-.container-contact h2 {
-    color: #365b6d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Gagalin';
-    font-size: 5rem;
-    align-items: start;
+.message-box {
+  height: 120px;
+  resize: vertical;
 }
 
 
-
-@media (max-width: 1600px) {
-  .container-contact {
-    margin: 20px;
-    margin-top: 0;
-    padding: 20px;
-  }
-
-  input[type=submit] {
-    width: 100%;
-  }
-
-  .container-contact h1 {
-    font-size: 3rem;
-    text-align: center;
-  }
+@media (max-width:1624px){
+.container-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* centers the heading + form */
+  margin-left: 0px; /* adjusts for your sidebar */
+  padding: 40px 20px;
+}
 }

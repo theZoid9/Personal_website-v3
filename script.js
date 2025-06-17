@@ -1,4 +1,8 @@
-function toggleNav(btn) {
-  btn.classList.toggle("change");
-  document.getElementById("nav").classList.toggle("nav-open");
-}
+  function toggleMenu() {
+    var links = document.getElementById("myLinks");
+    if (links.style.display === "block") {
+      links.style.display = "none";
+    } else {
+      links.style.display = "block";
+    }
+  }

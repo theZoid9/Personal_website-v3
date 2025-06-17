@@ -311,3 +311,70 @@ body {
     font-size: 1.2rem;
   }
 }
+
+.topnav {
+  display: none;
+}
+
+@media (max-width: 1768px) {
+  .topnav {
+    display: block;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .nav-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f4b57;
+    height: 50px;
+    padding: 0 0;
+     
+  }
+
+  .nav-topbar .logoz {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 14px 16px;
+    text-align: center;
+     min-width: 0px;
+     
+}
+  }
+
+.topnav a.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(160, 160, 160);
+  color: #000;
+  height: 50px; 
+  width: 50px;  
+  padding: 0;   
+  
+
+}
+  .topnav a.icon i {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+
+
+  #myLinks {
+    display: none;
+    background-color: #333;
+  }
+
+  #myLinks a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Gagalin';
+  }
+
+  #myLinks a:hover {
+    background-color: #575757;
+  }
