@@ -319,10 +319,20 @@ body {
 }
 
 @media (max-width: 1768px) {
+
+    .topnav {
+    position: fixed;         /* Sticks it to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;           /* Make sure it's on top of other elements */
+  }
+
+
   .topnav {
     display: block;
     width: 100%;
-    font-family: Arial, sans-serif;
+
   }
 
   .nav-topbar {
@@ -344,6 +354,7 @@ body {
   }
 
   .topnav a.icon {
+     text-decoration: none; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,6 +363,7 @@ body {
     height: 50px;
     width: 50px;
     padding: 0;
+    
   }
 
   .topnav a.icon i {
