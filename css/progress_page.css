@@ -63,8 +63,8 @@
  
 }
   .w-layout-grid {
-    margin-left: 0; /* Remove the space since nav is hidden/collapsed */
-    padding: 1rem;   /* Optional: tighter padding on smaller screens */
+    margin-left: 0; 
+    padding: 1rem;  
   }
 }
 @media (max-width: 1468px) {
@@ -74,7 +74,7 @@
  
 }
   .w-layout-grid {
-    margin-left: 100px; /* Remove the space since nav is hidden/collapsed */
-    padding: 1rem;   /* Optional: tighter padding on smaller screens */
+    margin-left: 100px; 
+    padding: 1rem;  
   }
 }
