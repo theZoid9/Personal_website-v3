@@ -3,6 +3,10 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
+* {
+
+}
+
 .my-projects {
   font-size: clamp(1.5rem, 5vw, 3rem);
   text-align: center;
