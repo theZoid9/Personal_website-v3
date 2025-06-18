@@ -232,11 +232,7 @@ body {
   max-width: 600px;
 }
 
-.topnav {
-  display: none;
-  border: 2px solid red;
-  opacity: 0%;
-}
+
 
 
 @media (max-width: 1624px) {
@@ -329,7 +325,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1768px) {
+@media (max-width: 1624px) {
 
 
 
