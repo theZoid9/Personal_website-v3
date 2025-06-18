@@ -81,7 +81,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   animation: bounce 2s infinite;
   transition: transform 0.2s ease;
-  font-family:'Courier New', Courier, monospace;
+ 
 }
 
 .hire-me:hover {
