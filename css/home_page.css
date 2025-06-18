@@ -2,12 +2,14 @@
   font-family: 'Gagalin';
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
-
+* {
+ 
+}
 
 body {
   background-color: #f2f1ec;
   color: white;
-  margin: 0;
+  margin-left: 0;
   padding: 0;
   font-family: sans-serif;
   max-width: 100%; 
@@ -79,6 +81,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   animation: bounce 2s infinite;
   transition: transform 0.2s ease;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .hire-me:hover {
@@ -122,7 +125,7 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   margin-left: 350px;
-
+  margin-top: -20px;
 
 }
 
@@ -130,6 +133,7 @@ body {
 
   width: 100px;
   height: 100%;
+
   background-color: #b29e84;
   color: #253439;
   writing-mode: vertical-rl;
@@ -298,10 +302,11 @@ body {
   }
 
   .desc {
-
     font-size: 1.2rem;
     max-width: 90%;
   }
+
+
 }
 
 @media (max-width: 600px) {
@@ -321,7 +326,7 @@ body {
 @media (max-width: 1768px) {
 
     .topnav {
-    position: fixed;       
+    margin-top: -8px;
     top: 0;
     left: 0;
     right: 0;
@@ -375,10 +380,15 @@ body {
     background-color: #333;
   }
 
+  #myLinks.show {
+    display: block;
+  }
+
   #myLinks ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   #myLinks a {

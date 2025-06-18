@@ -1,8 +1,4 @@
-  function toggleMenu() {
-    var links = document.getElementById("myLinks");
-    if (links.style.display === "block") {
-      links.style.display = "none";
-    } else {
-      links.style.display = "block";
-    }
-  }
+function toggleMenu() {
+  const menu = document.getElementById("myLinks");
+  menu.classList.toggle("show");
+}
