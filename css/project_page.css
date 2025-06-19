@@ -7,10 +7,10 @@
 .my-projects {
   font-size: clamp(1.5rem, 5vw, 3rem);
   text-align: center;
-  margin-left: 300px;
+  margin-left: 250px;
   color: #365b6d; 
   font-family: 'Gagalin', sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .projects {

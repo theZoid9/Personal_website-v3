@@ -3,16 +3,14 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
+
 #jpt {
     width: 100px;
-
-
 }
 
 .stack {
     padding: 0;
     margin-left: 0;
-
 }
 
 .stack h2 {
@@ -21,18 +19,16 @@
     font-family: 'Gagalin';
     display: flex;
     justify-content: center;
-    
+    margin-left: 250px;    
 }
 
 
 .logo-stack {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 50px;
-    margin-left: 0px;
-    padding-left: 100px;
-
- 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:50px;
+    padding-left: 75px;
+    margin-left: 250px;
 }
 
 .logo-stack img {
@@ -54,39 +50,98 @@
     padding: 50px;
 }
 
-@media (max-width: 1600px) {
-.stack h2 {
+@media (max-width: 1840px) {
+    .stack h2 {
     font-size: 4rem;
-    color: #365b6d;
-    font-family: 'Gagalin';
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+    margin-left: 0px;    
+
 }
 
+    .logo-stack {
+        margin-left: 0px;
+        padding-left: 150px;
+
+    }
+}
+
+
+/* Extra large screens (1440px and up) */
+@media (max-width: 1440px) {
+    .stack h2 {
+    font-size: 4rem;
+    margin-left: 0px;    
+
+}
+
+    .logo-stack {
+        margin-left: 0px;
+        padding-left: 150px;
+    }
+}
+
+/* Large laptops (1366px and down) */
+@media (max-width: 1366px) {
+.stack h2 {
+    font-size: 4rem;
+    margin-left: 0px;    
+
+}
 
 .logo-stack {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    padding-bottom: 20px;
-    padding-right: 50px;
+    margin-left: 80px;
+    padding: 0;
 
 }
-
-
 }
-@media (max-width: 600px) {
-.stack h2 {
+
+/* Tablets and small laptops (1024px and down) */
+@media (max-width: 1024px) {
+        .stack h2 {
     font-size: 4rem;
-    color: #365b6d;
-    font-family: 'Gagalin';
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
- 
-    
+    margin-left: 0px;    
+
 }
 
+    .logo-stack {
+    margin-left: 80px;
+    padding: 0;
+
+}
+
+}
+
+/* Small tablets and large phones (768px and down) */
+@media (max-width: 768px) {
+    .stack h2 {
+    font-size: 4rem;
+    margin-left: 0px;    
+
+}
+
+    .logo-stack {
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+}
+   
+}
+
+/* Phones (480px and down) */
+@media (max-width: 480px) {
+    .stack h2 {
+    font-size: 4rem;
+    margin-left: 0px;    
+ 
+}
+
+    .logo-stack {
+
+    margin-left: 0;
+    padding: 0;
+
+}
 
 }

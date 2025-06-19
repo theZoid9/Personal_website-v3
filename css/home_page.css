@@ -130,10 +130,8 @@ body {
 }
 
 .download {
-
   width: 100px;
   height: 100%;
-
   background-color: #b29e84;
   color: #253439;
   writing-mode: vertical-rl;
@@ -235,7 +233,7 @@ body {
 
 
 
-@media (max-width: 1624px) {
+@media (max-width: 1824px) {
   .nav {
     display: none;
   }

@@ -6,7 +6,6 @@
 .aboutpage-wrapper{
   min-height: 100vh;
   padding: 0;
-  margin-top: -100px;
 }
 
 .Abouthead {
@@ -15,32 +14,32 @@
   font-family: 'Gagalin';
   font-size: 5rem;
   color: #365b6d;
+  padding-top: 20px;
+  margin: 0;
+  margin-left: 250px;
 }
 
-.personalinfo {
-  margin-left: 300px
-  }
 
 .text-info {
-  width: 100%;
   display: flex;
   justify-content: center;
-    
+  margin-left: 250px;
 }
 
 .para {
   font-size: 1.8rem;
   text-align: center;
   color: #365b6d;
+  
 }
 
 .personal-box {
-  width: 100%;
   display:flex;
   flex-direction: row;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
   color: #365b6d;
+  margin-left: 250px;
 
 }
 
@@ -49,7 +48,6 @@
   flex-direction: column;
   padding: 0;
   gap: 10px;
-  font-size: 1.5rem;
   color: #365b6d;
 }
 
@@ -66,6 +64,7 @@
   gap: 10px;
   font-size: 1.5rem;
   margin-left: 20px;
+  
 }
 
 
@@ -75,6 +74,7 @@
   padding: 0;
   gap: 10px;
   font-size: 1.5rem;
+  
 }
 
 .interests {
@@ -93,18 +93,15 @@
 }
 
 
-@media (max-width:  1600px) {
-
-  .Abouthead {
+/* Large Desktops (1440px and up) */
+@media (max-width: 1824px) {
+   .Abouthead {
     display: flex;
     justify-content: center;
-    margin-left: 0;
-    margin-top: 150px;
     font-family: 'Gagalin';
-    font-size: 2.5rem;
+    font-size: 5rem;
     text-align: center;
-    padding: 0 10px;
-   
+    margin-left: 0;
   }
 
   .personalinfo {
@@ -113,25 +110,18 @@
   }
 
   .text-info {
- 
-    display: flex;
-    justify-content: center;
+    margin-left: 0;
 
   }
 
   .para {
     font-size: 1.2rem;
-    text-align: center;
-    width: 100%;
+    margin-left: 0;
     
   }
 
   .personal-box {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    
+    margin-left: 0;
   }
 
   .details {
@@ -140,30 +130,50 @@
     gap: 8px;
   }
 
-  .personal-info {
-    font-size: 2rem;
-    text-align: center;
+
+}
+
+/* Standard Laptops (1024px - 1366px) */
+@media (max-width: 1366px) {
+
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1024px) {
+      .personal-box {
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+
   }
 
-  .all-info {
-    font-size: 1.2rem;
-    margin-left: 60px;
-    padding: 0 10px;
+}
+
+/* Small Tablets and Phones (480px - 767px) */
+@media (max-width: 768px) {
+    .personal-box {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 100px;
+
   }
 
-  .interest-box {
-    font-size: 1.2rem;
-    padding: 0 10px;
+}
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .Abouthead {
+    font-size: 4.0rem;
   }
 
-  .interests {
-    font-size: 2rem;
-    text-align: center;
-  }
+  .personal-box {
 
-  .all-interests {
-    font-size: 1.2rem;
-    margin-left: 0;
-    padding: 0 10px;
-  }
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+
+}
+
 }

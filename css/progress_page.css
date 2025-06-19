@@ -3,14 +3,14 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
+
 .heading-h5 {
   color: #365b6d;
   font-family: 'Gagalin';
   display: flex;
   justify-content: center;
-  font-size: 4rem;
-  margin-left: 300px; 
-
+  font-size: 5rem;
+  margin-left: 250px; 
 }
 
 .w-layout-grid {
@@ -30,7 +30,7 @@
   padding: 1.5rem;
   box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
-  width: 250px;
+
 
 }
 
@@ -80,11 +80,6 @@
   .w-layout-grid {
     margin-left: 50px; 
     padding: 1rem;  
-
-  }
-
-  .split-work-item {
-    width: 300px;
   }
 }
 @media (max-width: 554px) {
@@ -100,8 +95,5 @@
 
   }
 
-  .split-work-item {
-        min-width: auto;
-      
-  }
+
 }
