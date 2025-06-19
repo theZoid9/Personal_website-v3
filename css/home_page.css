@@ -2,9 +2,20 @@
   font-family: 'Gagalin';
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
+
 * {
- 
+
+
 }
+
+html{
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
 
 body {
   background-color: #f2f1ec;
@@ -12,8 +23,8 @@ body {
   margin-left: 0;
   padding: 0;
   font-family: sans-serif;
-  max-width: 100%; 
- 
+  width: 100%; 
+    border:  4px solid rgb(0, 0, 0);
   
 }
 
@@ -81,6 +92,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   animation: bounce 2s infinite;
   transition: transform 0.2s ease;
+  
  
 }
 
@@ -121,12 +133,10 @@ body {
 
 
 .dwn-box {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-left: 350px;
+  
   margin-top: -20px;
-
+  border:  4px solid red;
+  margin-left: 50px;
 }
 
 .download {
@@ -140,8 +150,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-family: 'Gagalin', sans-serif;
+   border:  2px solid rgb(0, 60, 255);
 }
 
 .download a {
@@ -249,8 +260,10 @@ body {
 
   .dwn-box {
     width: 100%;
+    margin-right: 100px;
     justify-content: center;
     margin-left: 0;
+    
 
   }
 
@@ -259,6 +272,7 @@ body {
     font-size: 1.4rem;
     width: auto;
     padding: 0.5rem 1.5rem;
+    padding-left: 2rem;
     width: 100%;
     height: 50px;
   }
@@ -316,6 +330,11 @@ body {
 
   .download {
     font-size: 1.2rem;
+  }
+
+  .intro {
+    border: 2px solid black;
+    height: 20px;
   }
 }
 
