@@ -21,6 +21,7 @@
   margin-right: 50px;
   margin-left: 300px;
 
+
 }
 
 .split-work-item {
@@ -30,6 +31,7 @@
   box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   width: 250px;
+
 }
 
 .split-work-item:hover {
@@ -82,7 +84,7 @@
   }
 
   .split-work-item {
-    width: 200px;
+    width: 300px;
   }
 }
 @media (max-width: 554px) {
@@ -93,12 +95,13 @@
  
 }
   .w-layout-grid {
-    margin-left: 0px; 
+    margin-left: 50px; 
     padding: 1rem;  
 
   }
 
   .split-work-item {
-        width: 350px;
+        min-width: auto;
+      
   }
 }
