@@ -52,9 +52,6 @@
 .personal-info {
   font-family: 'Gagalin';
   font-size: 3rem;
-
-  
-  
 }
 
 .all-info {
@@ -161,35 +158,42 @@
 
   display:flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 0px;
-  border:  2px solid black;
+  gap: 10;
+
 }
 
 .personal-info {
   font-family: 'Gagalin';
   font-size: 2rem;
   width: 100%;
+  margin: 0;
+ 
 }
 
 .interests {
   font-family: 'Gagalin';
   font-size: 2rem;
   width: 100%;
+  margin: 0;
 }
 
 .details {
    margin-left: 0;
+   padding: 0;
+
 }
 
 .all-info {
   font-size: 1rem;
-  margin: 0;
+  margin: 10;
+  
 
 }
 
 .all-interests {
    font-size: 1rem;
+   margin: 10;
+ 
 }
 
 }

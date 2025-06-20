@@ -462,13 +462,10 @@ body {
 }
 
 .dwn-box {
-  border: 2px solid rebeccapurple;
+
   margin-right: 0;
 }
 
 
 }
 
-* {
-  border:  2px solid firebrick;
-}
