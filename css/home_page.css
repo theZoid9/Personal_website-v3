@@ -232,7 +232,7 @@ body {
   display: flex;
   width: 710px;  
   height: auto;
-  border: 2px solid rgb(0, 17, 255);
+  
 }
 
 .desc {
@@ -359,19 +359,15 @@ body {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-      border: 2px solid red;
+  
   }
 
-  .intro img {
-
-    border: 2px solid red;
-  }
 
   .desc {
     font-size: 1rem;
     max-width: 90%;
     
-    border: 2px solid red;
+ 
   }
  
 
@@ -458,12 +454,18 @@ body {
   display: flex;
   width: 100%;  
   height: auto;
-  border: 2px solid rgb(0, 17, 255);
+
 }
 
 .dwn-box {
 
-  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+.download {
+  padding-left: 0;
 }
 
 

@@ -149,21 +149,22 @@
 /* Small Tablets and Phones (480px - 767px) */
 @media (max-width: 768px) {
     .personal-box {
-      display:grid;
+      display:flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       gap: 0;
+
+    
 
   }
 
   .all-info{
 
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .all-interests {
-   
-    margin-top: 0;
+    margin-top: 10px;
   }
 
 }
@@ -179,6 +180,7 @@
   flex-direction: column;
   gap: 10;
   align-items: center;
+
 
 
 }
