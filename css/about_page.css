@@ -164,7 +164,7 @@
 /* Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
   .Abouthead {
-    font-size: 4.0rem;
+    font-size: 3.0rem;
   }
 
   .personal-box {
@@ -173,6 +173,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 0px;
+   border:  2px solid black;
 
   
 }

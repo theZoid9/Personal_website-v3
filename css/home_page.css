@@ -4,12 +4,10 @@
 }
 
 * {
-
-
+  
 }
 
 html{
-
   margin: 0;
   padding: 0;
   width: 100%;
@@ -21,11 +19,10 @@ body {
   background-color: #f2f1ec;
   color: white;
   margin-left: 0;
+  margin-top: 0;
   padding: 0;
   font-family: sans-serif;
   width: 100%; 
-    border:  4px solid rgb(0, 0, 0);
-  
 }
 
 .logoz {
@@ -40,8 +37,8 @@ body {
 
 .homepage-wrapper {
   display: flex;
-  margin-bottom: 120px;
-   margin-left: 150px;
+  margin-bottom: 0px;
+   
 }
 
 
@@ -133,10 +130,12 @@ body {
 
 
 .dwn-box {
-  
-  margin-top: -20px;
-  border:  4px solid red;
-  margin-left: 50px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 400px;
+  display: flex;
+  justify-content: end;
+
 }
 
 .download {
@@ -152,12 +151,15 @@ body {
   align-items: center;
   font-size: 2.2rem;
   font-family: 'Gagalin', sans-serif;
-   border:  2px solid rgb(0, 60, 255);
+ 
+   
 }
 
 .download a {
   text-decoration: none;
   color: #365b6d;
+  padding-left: 20px;
+
 }
 
 .download a:hover {
@@ -176,21 +178,20 @@ body {
 
 .profile-img {
   display: flex;
+  justify-content: center;
+  padding: 1rem;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-
 
 }
 
-.profile-img img {
-
-  height: 0px;
-  object-fit: cover;
+.profile-img .zaid {
+  max-width: 100%;
+  height: auto;  
+  width: 100%;
+  max-width: 310px;   
+  border-radius: 10px; 
   transform: rotate(-7deg);
   border-radius: 90px;
-  border: 2px solid #000;
 }
 
 .names {
@@ -228,10 +229,10 @@ body {
 
 
 .intro img {
-  width: 100%;
-  max-width: 800px;
+  display: flex;
+  width: 710px;  
   height: auto;
-  margin-bottom: 1rem;
+  border: 2px solid rgb(0, 17, 255);
 }
 
 .desc {
@@ -241,121 +242,26 @@ body {
   max-width: 600px;
 }
 
-
-
-
-@media (max-width: 1824px) {
-  .nav {
-    display: none;
-  }
-
-  .homepage-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-
-
-}
-
-  .dwn-box {
-    width: 100%;
-    margin-right: 100px;
-    justify-content: center;
-    margin-left: 0;
-    
-
-  }
-
-  .download {
-    writing-mode: horizontal-tb;
-    font-size: 1.4rem;
-    width: auto;
-    padding: 0.5rem 1.5rem;
-    padding-left: 2rem;
-    width: 100%;
-    height: 50px;
-  }
-
-  .container {
-    margin-left: 0;
-    padding: 1rem;
-  }
-
-  .name, .surname {
-    font-size: 3.5rem;
-  }
-
-  .profile-img {
-    display:flex;
-    margin-right: 400px;
-    margin-top: 140px;
-    min-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  }
-
-  .profile-img img {
-    width: 220px;
-    height: 240px;
-    transform: none;
-    border-radius: 20px;
-  }
-
-  .names {
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .intro img {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .desc {
-    font-size: 1.2rem;
-    max-width: 90%;
-  }
-
-
-}
-
-@media (max-width: 600px) {
-  .name, .surname {
-    font-size: 2.5rem;
-  }
-
-  .download {
-    font-size: 1.2rem;
-  }
-
-  .intro {
-    border: 2px solid black;
-    height: 20px;
-  }
-}
-
 .topnav {
   display: none;
 }
 
-@media (max-width: 1624px) {
+
+/* Extra large screens (1440px and up) */
+@media (max-width: 1840px) {
     .topnav {
     margin-top: -8px;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;          
+    z-index: 9999;  
+       
   }
 
 
   .topnav {
     display: block;
-    width: 100%;
-
+    width: 100%;  
   }
 
   .nav-topbar {
@@ -393,6 +299,81 @@ body {
     font-size: 20px;
   }
 
+
+    .nav {
+    display: none;
+  }
+
+  .homepage-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+  .dwn-box {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+
+  }
+
+  .download {
+    writing-mode: horizontal-tb;
+    font-size: 1.4rem;
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    padding-left: 2rem;
+    width: 100%;
+    height: 50px;
+  }
+
+  .container {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .name, .surname {
+    font-size: 3.5rem;
+  }
+
+  .profile-img {
+    display:flex;
+    margin-right: 400px;
+    margin-top: 140px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .profile-img img {
+    width: 220px;
+    height: 240px;
+    transform: none;
+    border-radius: 20px;
+  }
+
+  .names {
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+      border: 2px solid red;
+  }
+
+  .intro img {
+
+    border: 2px solid red;
+  }
+
+  .desc {
+    font-size: 1rem;
+    max-width: 90%;
+    
+    border: 2px solid red;
+  }
+ 
+
   #myLinks {
     display: none;
     background-color: #333;
@@ -420,4 +401,75 @@ body {
   #myLinks a:hover {
     background-color: #575757;
   }
+}
+
+/* Large laptops (1366px and down) */
+@media (max-width: 1366px) {
+  selector {
+    /* styles for standard laptops */
+  }
+}
+
+/* Tablets and small laptops (1024px and down) */
+@media (max-width: 1024px) {
+  selector {
+    /* styles for tablets */
+  }
+}
+
+/* Small tablets and large phones (768px and down) */
+@media (max-width: 768px) {
+  .name, .surname {
+    font-size: 2.5rem;
+  }
+
+  .download {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+/* Phones (480px and down) */
+@media (max-width: 480px) {
+  .profile-img {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  margin-top: 0px;
+}
+
+
+.profile-img .zaid {
+  max-width: 100%;
+  height: auto;  
+  width: 100%;
+  max-width: 200px;   
+  max-height: 200px;
+  border-radius: 10px; 
+  transform: rotate(0deg);
+  border-radius: 90px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.intro img {
+  display: flex;
+  width: 310px;  
+  height: auto;
+  border: 2px solid rgb(0, 17, 255);
+}
+
+.dwn-box {
+  border: 2px solid rebeccapurple;
+  margin-right: 0;
+}
+
+.download {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  margin-right: 0;
+}
+
 }
