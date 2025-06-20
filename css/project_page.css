@@ -21,7 +21,7 @@
 
 .project-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 
@@ -116,7 +116,7 @@
   transform: translateY(2px);
 }
 
-@media (max-width:1624px){
+@media (max-width:1894px){
   .projects {
   padding: 2rem;
   margin-left: 0px;
@@ -124,6 +124,7 @@
 
 .my-projects {
   margin-left: 0px;
+
 }
 }
 @media (max-width:480px){
@@ -133,5 +134,18 @@
   margin-left: 0px;
   font-size: 2.5rem;
 }
+
+.projects {
+  padding: 0;
+  margin-left: 0px;
+  
+}
+
+.project-card{
+  margin-left: 0;
+
+
+}
+
 
 }
