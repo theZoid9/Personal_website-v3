@@ -26,9 +26,10 @@
 .logo-stack {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap:50px;
-    padding-left: 75px;
-    margin-left: 250px;
+    margin-left: 250px;  
+    padding-left: 200px;
+    gap: 50px;
+
 }
 
 .logo-stack img {
@@ -46,22 +47,19 @@
 
 
 .stack img {
-  
-    padding: 50px;
+  padding: 20px;
 }
 
 @media (max-width: 1840px) {
     .stack h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-left: 0px;    
-
 }
 
     .logo-stack {
-        margin-left: 0px;
-        padding-left: 150px;
-
+        margin-left: 0;
     }
+
 }
 
 
@@ -74,9 +72,10 @@
 }
 
     .logo-stack {
-        margin-left: 0px;
-        padding-left: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
 /* Large laptops (1366px and down) */
@@ -88,9 +87,7 @@
 }
 
 .logo-stack {
-    margin-left: 80px;
-    padding: 0;
-
+  
 }
 }
 
@@ -103,8 +100,13 @@
 }
 
     .logo-stack {
-    margin-left: 80px;
-    padding: 0;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     padding-left: 140px;
+}
+
+.logo-stack img{
+    border: 3px solid saddlebrown;
 
 }
 
@@ -119,12 +121,9 @@
 }
 
     .logo-stack {
-     margin: 0;
      display: grid;
      grid-template-columns: 1fr 1fr; 
-     padding-left: 50px;
-     justify-content: center;
-     align-items: center;
+    
 
 }
    
