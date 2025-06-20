@@ -136,14 +136,34 @@
       justify-content: center;
   }
 
+    .all-info{
+    margin-top: -10px
+  }
+
+  .all-interests {
+    margin-top: 0;
+  }
+
 }
 
 /* Small Tablets and Phones (480px - 767px) */
 @media (max-width: 768px) {
     .personal-box {
-      display:flex;
+      display:grid;
       flex-direction: column;
       justify-content: center;
+      gap: 0;
+
+  }
+
+  .all-info{
+
+    margin-top: 0;
+  }
+
+  .all-interests {
+   
+    margin-top: 0;
   }
 
 }
@@ -155,7 +175,6 @@
   }
 
   .personal-box {
-
   display:flex;
   flex-direction: column;
   gap: 10;

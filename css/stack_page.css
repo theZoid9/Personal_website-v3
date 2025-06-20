@@ -120,8 +120,9 @@
 
     .logo-stack {
      margin: 0;
-     display: flex;
-     flex-direction: column;
+     display: grid;
+     grid-template-columns: 1fr 1fr; 
+     padding-left: 50px;
      justify-content: center;
      align-items: center;
 
@@ -132,16 +133,25 @@
 /* Phones (480px and down) */
 @media (max-width: 480px) {
     .stack h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 0px;    
  
 }
 
     .logo-stack {
-      border:  2px solid rgb(165, 0, 0);
+    border:  2px solid rgb(165, 0, 0);
     margin-left: 0;
     padding: 0;
-
+    display: flex;
+    flex-direction: column;
 }
 
+    .logo-stack img {
+
+        width: 65px;
+        height: 65px;
+    }
+    #jpt {
+        width: 65px;
+    }
 }
