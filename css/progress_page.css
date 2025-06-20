@@ -57,7 +57,7 @@
 }
 
 /* Extra large screens (1440px and up) */
-@media (max-width: 1440px) {
+@media (max-width: 1890px) {
 
   .heading-h5 {
     margin-left: 0px; 
@@ -87,6 +87,8 @@
     padding-left: 0; 
   
   }
+
+
 }
 
 
