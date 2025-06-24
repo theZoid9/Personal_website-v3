@@ -251,6 +251,7 @@ body {
 /* Extra large screens (1440px and up) */
 @media (max-width: 1840px) {
     .topnav {
+    position: sticky;  
     margin-top: -8px;
     top: 0;
     left: 0;
