@@ -423,12 +423,13 @@ body {
 
 /* Phones (480px and down) */
 @media (max-width: 480px) {
+
   .profile-img {
   display: flex;
   justify-content: center;
   padding: 1rem;
   align-items: center;
-  margin-top: 150px;
+ 
 }
 
 
