@@ -20,6 +20,7 @@
     font-family: 'Gagalin';
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-left: 250px;    
 }
 
@@ -53,7 +54,7 @@
 
 @media (max-width: 1840px) {
     .stack h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-left: 0px;    
 }
 
@@ -82,7 +83,7 @@
 /* Large laptops (1366px and down) */
 @media (max-width: 1366px) {
 .stack h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-left: 0px;    
 
 }
@@ -92,7 +93,7 @@
 /* Tablets and small laptops (1024px and down) */
 @media (max-width: 1024px) {
         .stack h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 0px;    
 
 }
@@ -109,7 +110,7 @@
 /* Small tablets and large phones (768px and down) */
 @media (max-width: 768px) {
     .stack h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-left: 0px;    
 
 }
@@ -129,7 +130,7 @@
 /* Phones (480px and down) */
 @media (max-width: 480px) {
     .stack h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 0px;    
  
 }

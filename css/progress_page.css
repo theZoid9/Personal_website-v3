@@ -3,33 +3,35 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
-
 .heading-h5 {
   color: #365b6d;
   font-family: 'Gagalin';
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 5rem;
-  margin-left: 250px; 
+  margin: 2rem 0;
+  padding: 0 1rem;
+   margin-left: 250px;
 }
 
+/* Grid wrapper */
 .w-layout-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 2rem;
-  margin-left: 250px; /* Make room for sidebar */
-  
-
+  box-sizing: border-box;
+    margin-left: 250px;
 }
+
+/* Individual grid items */
 .split-work-item {
   background-color: #f5f5f5;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
-  width: 200px;
-
 }
 
 .split-work-item:hover {
@@ -45,7 +47,7 @@
 .split-work-category {
   font-size: 1.25rem;
   color: #365b6d;
-  margin: 0 0 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .work-badge-dark {
@@ -56,78 +58,53 @@
   border-radius: 4px;
 }
 
-/* Extra large screens (1440px and up) */
-@media (max-width: 1890px) {
+/* Responsive tweaks */
 
+/* Large screens */
+@media (max-width: 1840px) {
   .heading-h5 {
-    margin-left: 0px; 
- 
-}
+    font-size: 4rem;
+     margin-left: 0; 
+  }
   .w-layout-grid {
     margin-left: 0; 
-    padding-left: 0;
 
-  }
-
-  .project{
-    margin-left: 0;
-    
   }
 }
 
-/* Tablets and small laptops (1024px and down) */
+/* Tablets */
 @media (max-width: 1024px) {
-
   .heading-h5 {
-    margin-left: 30px; 
-}
-
-
-  .project {
-    padding-left: 0; 
-  
+    font-size: 3rem;
+    margin-left: 0;
   }
-
-
+  .w-layout-grid {
+    margin-left: 0; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-
-/* Small tablets and large phones (768px and down) */
+/* Small tablets and phones */
 @media (max-width: 768px) {
-   .w-layout-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0px;
-  margin-left: 0px; /* Make room for sidebar */
-  box-sizing: border-box;
-
-}
-
-
-}
-
-/* Phones (480px and down) */
-@media (max-width: 480px) {
-
-  .project {
-    margin-left: 0;
-     padding-left: 0;
-
+  .heading-h5 {
+    font-size: 2.5rem;
   }
 
+  .w-layout-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
   .heading-h5 {
-    font-size: 2.0rem;
+    font-size: 2rem;
+  }
 
-    margin-left: 0;
- 
-}
-.w-layout-grid {
-   margin-left: 0;
-  
-}
-
-
-
+  .split-work-item {
+    width: 100%;
+    padding: 1rem;
+  }
 }

@@ -3,15 +3,11 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
-
-
 html{
   margin: 0;
   padding: 0;
   width: 100%;
-  
 }
-
 
 body {
   background-color: #f2f1ec;
@@ -134,10 +130,9 @@ body {
 .dwn-box {
   margin-bottom: 0px;
   margin-left: 0px;
-  width: 400px;
+  width: 100%;
   display: flex;
   justify-content: end;
-
 }
 
 .download {
@@ -176,6 +171,12 @@ body {
   align-items: center;
 
 }
+
+.typewriter {
+  display: flex;
+  color:#2f4b57;
+}
+
 
 
 .profile-img {
@@ -230,13 +231,6 @@ body {
 }
 
 
-.intro img {
-  display: flex;
-  width: 710px;  
-  height: auto;
-  
-}
-
 .desc {
   font-size: 1.4rem;
   color: #2f4b57;
@@ -246,8 +240,6 @@ body {
 
 
 
-
-/* Extra large screens (1440px and up) */
 @media (max-width: 1840px) {
     .topnav {
     margin-top: -8px;
@@ -404,16 +396,12 @@ body {
 
 /* Large laptops (1366px and down) */
 @media (max-width: 1366px) {
-  selector {
-    /* styles for standard laptops */
-  }
+
 }
 
 /* Tablets and small laptops (1024px and down) */
 @media (max-width: 1024px) {
-  selector {
-    /* styles for tablets */
-  }
+
 }
 
 /* Small tablets and large phones (768px and down) */
@@ -424,6 +412,9 @@ body {
 
   .download {
     font-size: 1.2rem;
+  }
+  .f{
+    font-size: 2rem;
   }
 
 }
