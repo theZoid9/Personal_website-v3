@@ -10,8 +10,3 @@ document.querySelectorAll("#myLinks a").forEach(link => {
   });
 });
 
-  const form = document.getElementById("contactForm");
-  form.addEventListener("submit", function () {
-    alert("✅ Message sent successfully!");
-    form.reset(); 
-  });
