@@ -3,14 +3,24 @@
   src: url('../fonts/Gagalin-Regular.otf') format('opentype');
 }
 
+.socials1 {
+  display: grid;
+  grid-template-columns:  repeat(4, auto); 
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 80px;
+  padding-bottom: 20px;
+  margin-left: 300px;
+}
 
 .linkedin a{
-   
+  justify-content: center;
   text-decoration: none; 
   color: inherit;   
-  margin-left: 300px; 
-  padding: 0 20;
-  display: flex;
+
+
+
   justify-content: center; 
   color: #365b6d;   
   
@@ -27,8 +37,20 @@
 
 }
 
+.socials1 a:hover {
+  color: #289dd2;
+}
 
 @media (max-width: 1768px) {
+    
+    .socials1 {
+        
+     margin-left: 0;
+
+    }
+
+
+
     .linkedin a {
         font-family: 'Gagalin';
       text-decoration: none;  
@@ -53,6 +75,12 @@
 
 
 @media (max-width: 320px) {
+        .socials1 {
+
+     margin-left: 0;
+
+    }
+
     .linkedin a {
         font-family: 'Gagalin';
       text-decoration: none;  
