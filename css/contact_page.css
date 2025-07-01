@@ -134,3 +134,11 @@ textarea {
     max-width: 100%;
   }
 }
+@media (max-width: 320px) {
+
+.contact-section h2 {
+
+  font-size: 3rem;
+
+}
+}
