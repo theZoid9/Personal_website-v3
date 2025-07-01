@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Webpage</title>
     <link rel="stylesheet" href="../css/home_page.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/about_page.css">
     <link rel="stylesheet" href="../css/project_page.css">
     <link rel="stylesheet" href="../css/progress_page.css">
@@ -48,7 +49,7 @@
     <ul class="nav-links">
       <li><a href="#Home">HOME</a></li>
       <li><a href="#About">ABOUT</a></li>
-      <li><a href="#Progress">PROGRESS</a></li>
+      <li><a href="#Progress">PROJECTS</a></li>
       <li><a href="#Contact">CONTACT</a></li>
     
     </ul>
@@ -140,8 +141,8 @@
 </div>
 </section>
 
-<h2 class="my-projects" >My Projects</h2>
-<section class="projects">
+<h2 class="my-projects" id="Projects">My Projects</h2>
+<section class="projects" >
    
   <div class="project-box">
     
@@ -190,15 +191,39 @@
   </div>
 </section>
 
-<div class="linkedin">
-    <h2>CONTACT ME</h2>
-      <div class="socials1">
-      <a href="https://github.com/theZoid9"><i class="ri-github-fill ri-3x"></i></a>
-      <a href="https://drive.google.com/drive/folders/1gbNKjRe_8z1RHio4SYwurzM-SiyXqx1V?usp=sharing"><i class="ri-drive-fill ri-3x"></i></a>
-      <a href="#"><i class="ri-mail-send-line ri-3x"></i></a>
-      <a href="https://www.linkedin.com/feed/" target="_blank"><i class="ri-linkedin-box-line ri-3x"></i></a>
+<section class="contact-section">
+   <h2>Contact Me</h2>
+  <div class="contact-grid">
+       
+    <div class="linkedin">
+      <div class="social-box">
+        <div class="socials1">
+          <a href="https://github.com/theZoid9"><i class="ri-github-fill ri-3x"></i></a>
+          <a href="https://drive.google.com/drive/folders/1gbNKjRe_8z1RHio4SYwurzM-SiyXqx1V?usp=sharing"><i class="ri-drive-fill ri-3x"></i></a>
+          <a href="#"><i class="ri-mail-send-line ri-3x"></i></a>
+          <a href="https://www.linkedin.com/feed/"><i class="ri-linkedin-box-line ri-3x"></i></a>
+        </div>
+      </div>
     </div>
-</div>
+    <div class="contact-form">
+      <form id="contactForm" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+
+        <button type="submit" class="button">Send</button>
+        <p class="success" id="successMsg">Message sent successfully!</p>
+        <p class="error" id="errorMsg">Something went wrong. Try again.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
  
 <footer class="site-footer">
   <div class="footer-content">
@@ -206,7 +231,7 @@
     <div class="footer-links">
       <a href="#Home">Home</a>
       <a href="#About">About</a>
-      <a href="#Progress">Progress</a>
+      <a href="#Projects">Projects</a>
     </div>
   </div>
 </footer>
