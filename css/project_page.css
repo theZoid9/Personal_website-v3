@@ -64,6 +64,11 @@
   height: auto;
 }
 
+.project-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
 .button {
   align-items: center;
   appearance: none;
@@ -86,7 +91,8 @@
   user-select: none;
   white-space: nowrap;
   font-size: 1rem;
-  will-change: box-shadow, transform;
+ 
+
 }
 
 

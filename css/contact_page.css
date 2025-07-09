@@ -27,8 +27,8 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  grid-template-columns:1fr 2fr;
+
   max-width: 700px;
   width: 100%;
   border-radius: 12px;
@@ -55,6 +55,7 @@
   gap: 20px;
   justify-items: center;
   align-items: center;
+ 
 }
 
 .socials1 a {
@@ -81,7 +82,7 @@ form label {
 
 input,
 textarea {
-  width: 100%;
+  min-width: 100%;
   padding: 12px;
   margin-top: 5px;
   border: 1px solid #000000;
@@ -124,7 +125,13 @@ textarea {
   }
 
   .contact-grid {
+    display: grid;
     grid-template-columns: 1fr;
+
+  }
+
+  .contact-grid input {
+    padding-right: 20px;
   }
 
   .linkedin {
@@ -147,4 +154,9 @@ textarea {
   font-size: 3rem;
 
 }
+  .contact-grid input {
+    padding-right: 0px;
+  }
+
+
 }
