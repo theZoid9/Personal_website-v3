@@ -10,8 +10,7 @@
   margin-left: 250px;
   color: #365b6d; 
   font-family: 'Gagalin', sans-serif;
-  font-size: 5rem;
-  
+  font-size: 5rem;  
 }
 
 .projects {
@@ -22,7 +21,7 @@
 
 .project-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 2rem;
 }
 
@@ -33,12 +32,23 @@
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.yep {
+  display: flex;
+  justify-content: center;
 }
 
 .project-card h2{
   color: #2a4758;
   font-family: 'Gagalin';
   font-size: 2.5rem;
+  display: grid;
+  width: 200px;
+
+
 }
 .project-card:hover {
   transform: translateY(-5px);
@@ -147,7 +157,7 @@
 }
 
 .project-card{
-  margin-left: 0;
+  margin-left: 10px;
 
 
 }
