@@ -11,6 +11,7 @@
   padding-bottom: 100px;
   margin-left: 250px; 
   box-sizing: border-box;
+    
   
 }
 
@@ -19,9 +20,14 @@
   font-family: 'Gagalin';
   font-size: 5rem;
   margin-bottom: 40px;
-  
   padding: 10px 30px;
   text-align: center;
+}
+
+.contact-form {
+
+      padding: 20px;
+    
 }
 
 
@@ -29,8 +35,8 @@
   display: grid;
   grid-template-columns:1fr 2fr;
 
-  max-width: 700px;
-  width: 100%;
+  width: 700px;
+
   border-radius: 12px;
   padding: 30px;
     box-shadow: 0 14px 8px rgba(0,0,0,0.1);
@@ -83,7 +89,6 @@ form label {
 input,
 textarea {
   min-width: 100%;
-  padding: 12px;
   margin-top: 5px;
   border: 1px solid #000000;
   border-radius: 8px;
@@ -121,17 +126,18 @@ textarea {
 
   .contact-section {
     margin-left: 0;
-    padding: 60px 20px;
+  
   }
 
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
-
+    padding:  20px;
+    width: 70vh;
   }
 
   .contact-grid input {
-    padding-right: 20px;
+    padding-right: 0px;
   }
 
   .linkedin {
@@ -146,17 +152,37 @@ textarea {
   .social-box {
     max-width: 100%;
   }
-}
-@media (max-width: 320px) {
 
-.contact-section h2 {
+@media (max-width: 720px) {
 
-  font-size: 3rem;
-
-}
-  .contact-grid input {
+    .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 40vh;
+  }
+    .contact-grid input {
     padding-right: 0px;
   }
+    .form-container {
+    padding-left: 0;
+  }
+    .contact-section {
+    margin-left: 0;
 
+  }
+
+@media (max-width: 380px) {
+
+   #Contact {
+    font-size: 3rem;
+   }
+    .contact-grid {
+  
+    width: 30vh;
+  }
+
+
+
+}
 
 }
