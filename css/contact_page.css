@@ -152,6 +152,7 @@ textarea {
   .social-box {
     max-width: 100%;
   }
+}
 
 @media (max-width: 720px) {
 
@@ -170,6 +171,7 @@ textarea {
     margin-left: 0;
 
   }
+}
 
 @media (max-width: 380px) {
 
