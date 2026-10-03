@@ -326,3 +326,48 @@ h1, h2, h3, p { margin-top: 0; }
   .app-switcher { grid-template-columns: auto minmax(45px, 1fr) auto; }
   .arrow-hint { display: none; }
 }
+
+/* Filterable archive and expandable project stories. */
+.all-projects-panel { overflow-y: auto; overscroll-behavior-y: contain; }
+.all-projects-content { height: auto; min-height: 100%; padding-bottom: 130px; }
+.project-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 12px; }
+.project-filters button { display: inline-flex; align-items: center; gap: 12px; border: 1px solid var(--line); border-radius: 24px; background: transparent; color: var(--ink); padding: 10px 17px; font: inherit; font-size: .75rem; cursor: pointer; }
+.project-filters button span { font: .6rem 'DM Mono', monospace; opacity: .65; }
+.project-filters button[aria-pressed="true"] { background: var(--green-dark); color: white; border-color: var(--green-dark); }
+.project-filters button:hover { box-shadow: 0 3px 12px rgba(36,51,47,.1); }
+.project-filters button:focus-visible, .case-study summary:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 4px; }
+.project-results { color: #68786f; font: .6rem 'DM Mono', monospace; margin: 0 0 16px; }
+.project-collection { height: auto; min-height: 0; grid-template-rows: none; grid-auto-rows: auto; align-items: start; }
+.collection-card { grid-template-columns: .8fr 1fr; border-radius: 12px; }
+.collection-preview { height: 210px; }
+.collection-info { padding: 18px; }
+.collection-description { font-size: .72rem; line-height: 1.65; color: #68786f; margin: 0 0 12px; }
+.collection-info h3 { font-size: 1.1rem; }
+.collection-tags li { font-size: .5rem; }
+.collection-info > a, .collection-concept { font-size: .65rem; }
+.case-study { grid-column: 1 / -1; border-top: 1px solid var(--line); }
+.case-study summary { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; font-size: .75rem; color: var(--green-dark); cursor: pointer; list-style: none; }
+.case-study summary::-webkit-details-marker { display: none; }
+.case-study summary span { font-size: 1.1rem; transition: transform .2s; }
+.case-study[open] summary span { transform: rotate(45deg); }
+.case-study-body { padding: 0 18px 20px; }
+.case-study-preview { margin: 0 0 20px; background: #e5ebe3; border-radius: 8px; overflow: hidden; }
+.case-study-preview img { display: block; width: 100%; height: auto; }
+.case-study-preview figcaption { padding: 10px 12px; font: .55rem 'DM Mono', monospace; color: #68786f; }
+.case-study-concept { display: flex; flex-direction: column; align-items: center; padding-top: 10px; background: #f5d9c9; }
+.case-study-concept .phone-shell { position: relative; transform: scale(.8); margin: -30px 0; }
+.case-study-body dl { margin: 0; display: grid; gap: 17px; }
+.case-study-body dt { margin-bottom: 6px; color: var(--green-dark); font: .6rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
+.case-study-body dd { margin: 0; color: #586b60; font-size: .78rem; line-height: 1.7; }
+.all-projects-content .back-to-apps { position: static; display: inline-block; margin-top: 24px; }
+.all-projects-content > .panel-index { position: static; display: block; margin-top: 18px; text-align: right; }
+@media (max-width: 950px) {
+  .collection-card { grid-template-columns: 1fr; }
+  .collection-preview { height: 190px; }
+}
+@media (max-width: 680px) {
+  .project-collection { grid-template-columns: 1fr; grid-auto-rows: auto; }
+  .collection-preview { height: 220px; }
+  .project-filters { gap: 6px; }
+  .project-filters button { padding: 9px 12px; font-size: .68rem; gap: 8px; }
+}

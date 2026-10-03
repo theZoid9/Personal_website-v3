@@ -13,6 +13,8 @@ const applications = [
     href: 'https://techsquare.co.za',
     action: 'Visit website',
     tone: 'mint',
+    category: 'Web',
+    caseStudy: { role: 'Contribution details to be added.', challenge: 'Design goal: present a technology retailer clearly and help visitors explore its offering.', result: 'A website preview and a link to the customer-facing experience. Impact measurements have not been added.' },
   },
   {
     type: 'MOBILE APP CONCEPT',
@@ -20,6 +22,8 @@ const applications = [
     description: 'A pocket-sized map concept for saving favourite spots and quickly switching between places.',
     stack: ['Mobile UI', 'Maps', 'React'],
     tone: 'peach',
+    category: 'Mobile',
+    caseStudy: { role: 'Concept exploration within this portfolio.', challenge: 'Design goal: make saved places easy to find through a compact map interface.', result: 'An interface mockup showing map pins, a saved-place card and navigation. This is a concept, not a released mobile application.' },
   },
   {
     type: 'DATA APPLICATION',
@@ -31,6 +35,8 @@ const applications = [
     href: 'https://github.com/theZoid9/Data-wrangling',
     action: 'Explore repository',
     tone: 'blue',
+    category: 'Data',
+    caseStudy: { role: 'Contribution details to be added.', challenge: 'Project focus: clean and transform data in a notebook so the exploration can be followed step by step.', result: 'A notebook project with a preview and source repository. Dataset findings and measured improvements have not been added.' },
   },
   {
     type: '3D WEB EXPERIMENT',
@@ -42,6 +48,8 @@ const applications = [
     href: 'https://snakethreejs.onrender.com',
     action: 'Play the game',
     tone: 'lavender',
+    category: 'Games',
+    caseStudy: { role: 'Contribution details to be added.', challenge: 'Project focus: translate familiar Snake gameplay into a browser-based 3D presentation.', result: 'A playable browser experiment with a game preview. Player feedback and performance measurements have not been added.' },
   },
 ];
 
@@ -102,9 +110,44 @@ function ApplicationSlide({ application }) {
   );
 }
 
+function ProjectCard({ project }) {
+  return (
+    <article className={`collection-card collection-${project.tone}`}>
+      <div className={`collection-preview ${project.image ? '' : 'collection-place-marker'}`}>
+        {project.image ? <img src={project.image} alt={project.imageAlt} loading="lazy" /> : <PlaceMarkerPreview />}
+      </div>
+      <div className="collection-info">
+        <p className="collection-type">{project.type}</p>
+        <h3>{project.title}</h3>
+        <p className="collection-description">{project.description}</p>
+        <ul className="collection-tags">{project.stack.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+        {project.href ? <a href={project.href} target="_blank" rel="noreferrer">{project.action}<span>↗</span></a> : <span className="collection-concept">Concept preview</span>}
+      </div>
+      <details className="case-study">
+        <summary>Read case study <span aria-hidden="true">＋</span></summary>
+        <div className="case-study-body">
+          <figure className={`case-study-preview ${project.image ? '' : 'case-study-concept'}`}>
+            {project.image ? <img src={project.image} alt={project.imageAlt} loading="lazy" /> : <PlaceMarkerPreview />}
+            <figcaption>{project.image ? 'Animated project walkthrough' : 'Place Marker interface concept'}</figcaption>
+          </figure>
+          <dl>
+            <div><dt>Overview</dt><dd>{project.description}</dd></div>
+            <div><dt>My role</dt><dd>{project.caseStudy.role}</dd></div>
+            <div><dt>Technologies</dt><dd>{project.stack.join(' · ')}</dd></div>
+            <div><dt>Challenge</dt><dd>{project.caseStudy.challenge}</dd></div>
+            <div><dt>Result & status</dt><dd>{project.caseStudy.result}</dd></div>
+          </dl>
+        </div>
+      </details>
+    </article>
+  );
+}
+
 function App() {
   const [currentPanel, setCurrentPanel] = useState(0);
   const [activeApplication, setActiveApplication] = useState(0);
+  const [projectFilter, setProjectFilter] = useState('All');
+  const filteredProjects = applications.filter((project) => projectFilter === 'All' || project.category === projectFilter);
   const trackRef = useRef(null);
   const application = applications[activeApplication];
 
@@ -128,6 +171,8 @@ function App() {
         ref={trackRef}
         onScroll={handleTrackScroll}
         onWheel={(event) => {
+          const panel = event.target.closest('.page-panel');
+          if (panel && panel.scrollHeight > panel.clientHeight) return;
           if (Math.abs(event.deltaY) > Math.abs(event.deltaX) && trackRef.current) {
             trackRef.current.scrollLeft += event.deltaY;
           }
@@ -196,20 +241,16 @@ function App() {
             <div className="all-projects-heading">
               <div><p className="eyebrow">A FEW THINGS I’VE BEEN MAKING</p><h2>All the <span>work.</span></h2></div>
             </div>
-            <div className="project-collection">
-              {applications.map((project) => (
-                <article className={`collection-card collection-${project.tone}`} key={project.title}>
-                  <div className={`collection-preview ${project.image ? '' : 'collection-place-marker'}`}>
-                    {project.image ? <img src={project.image} alt={project.imageAlt} loading="lazy" /> : <PlaceMarkerPreview />}
-                  </div>
-                  <div className="collection-info">
-                    <p className="collection-type">{project.type}</p>
-                    <h3>{project.title}</h3>
-                    <ul className="collection-tags">{project.stack.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-                    {project.href ? <a href={project.href} target="_blank" rel="noreferrer">{project.action}<span>↗</span></a> : <span className="collection-concept">Concept preview</span>}
-                  </div>
-                </article>
+            <div className="project-filters" role="group" aria-label="Filter projects by category">
+              {['All', 'Web', 'Mobile', 'Data', 'Games'].map((category) => (
+                <button type="button" key={category} aria-pressed={projectFilter === category} onClick={() => setProjectFilter(category)}>
+                  {category}<span>{category === 'All' ? applications.length : applications.filter((project) => project.category === category).length}</span>
+                </button>
               ))}
+            </div>
+            <p className="project-results" role="status">{filteredProjects.length} {filteredProjects.length === 1 ? 'project' : 'projects'} · {projectFilter === 'All' ? 'All categories' : projectFilter}</p>
+            <div className="project-collection">
+              {filteredProjects.map((project) => <ProjectCard project={project} key={project.title} />)}
             </div>
             <a className="back-to-apps" href="#applications">← Back to app showcase</a>
             <span className="panel-index">04 — 06</span>
