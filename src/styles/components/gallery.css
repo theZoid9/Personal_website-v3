@@ -1,0 +1,148 @@
+/* components/gallery — feature styles and responsive rules. */
+.gallery-preview {
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  background: transparent;
+  display: block;
+}
+.preview-gallery {
+  width: 100%;
+  min-width: 0;
+}
+.browser-device {
+  overflow: hidden;
+  border: 7px solid #293e35;
+  border-radius: 14px;
+  background: #293e35;
+  box-shadow: 0 14px 28px rgba(36, 51, 47, 0.12);
+}
+.browser-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 9px 8px 13px;
+  color: #dce9df;
+}
+.browser-toolbar > span {
+  color: #df8265;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+}
+.browser-toolbar small {
+  font:
+    0.52rem 'DM Mono',
+    monospace;
+}
+.browser-device img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: #f7f6f0;
+}
+.screenshot-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.screenshot-controls button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #7b8e81;
+  color: #24332f;
+  background: #f7f6f0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.screenshot-controls > span {
+  min-width: 110px;
+  text-align: center;
+  font:
+    0.6rem 'DM Mono',
+    monospace;
+  color: #435d50;
+}
+.screenshot-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 4px 6px;
+}
+.screenshot-thumbnails button {
+  width: 70px;
+  height: 48px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 3px;
+  background: #e4eae0;
+  color: #24332f;
+  font:
+    0.6rem 'DM Mono',
+    monospace;
+  cursor: pointer;
+}
+.screenshot-thumbnails button[aria-pressed='true'] {
+  border-color: #41725f;
+  background: white;
+}
+.screenshot-thumbnails img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.concept-device {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5d9c9;
+  border-radius: 16px;
+  padding: 12px 0;
+}
+.concept-device .phone-shell {
+  position: relative;
+  transform: scale(0.8) rotate(-3deg);
+  margin: -32px 0;
+}
+.concept-badge {
+  padding: 12px 14px;
+  color: #654638;
+  font:
+    0.54rem 'DM Mono',
+    monospace;
+  text-align: center;
+}
+.concept-saved-list {
+  flex: 1;
+  display: grid;
+  gap: 8px;
+  padding: 4px 0;
+}
+.concept-saved-list > div {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-content: center;
+  gap: 5px;
+  background: #e9eee4;
+  border-radius: 8px;
+  padding: 10px;
+}
+.concept-saved-list span {
+  grid-row: span 2;
+  color: #41725f;
+}
+.concept-saved-list strong {
+  font-size: 0.65rem;
+}
+.concept-saved-list small {
+  font-size: 0.45rem;
+  color: #52645b;
+}
+@media (max-width: 680px) {
+  .browser-device img {
+    height: 220px;
+  }
+}

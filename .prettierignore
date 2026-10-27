@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/
+files/
+img/
+logos/
+fonts/
+css/
+pages/
+package-lock.json

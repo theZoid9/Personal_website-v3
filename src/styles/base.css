@@ -1,0 +1,71 @@
+/* base — feature styles and responsive rules. */
+@font-face {
+  font-family: 'Gagalin';
+  src: url('/fonts/Gagalin-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #24332f;
+  background: #f7f6f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #24332f;
+  --muted: #697873;
+  --green: #70a88f;
+  --green-dark: #41725f;
+  --coral: #df8265;
+  --line: rgba(36, 51, 47, 0.15);
+  --paper: #f7f6f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow: hidden;
+  background: var(--paper);
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: inherit;
+}
+button {
+  font: inherit;
+}
+::selection {
+  color: var(--ink);
+  background: #bde1cd;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

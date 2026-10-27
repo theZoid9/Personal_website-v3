@@ -1,0 +1,248 @@
+/* layout — feature styles and responsive rules. */
+.portfolio-track {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.portfolio-track::-webkit-scrollbar {
+  display: none;
+}
+.page-panel {
+  position: relative;
+  flex: 0 0 100vw;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  min-height: 620px;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+.panel-content {
+  position: relative;
+  width: min(1180px, calc(100% - 112px));
+  height: 100%;
+  margin-inline: auto;
+  padding: 104px 0 122px;
+}
+.corner-brand {
+  position: fixed;
+  z-index: 15;
+  top: 26px;
+  left: max(30px, calc((100vw - 1360px) / 2));
+  font:
+    2rem Gagalin,
+    sans-serif;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+}
+.corner-brand span {
+  color: var(--coral);
+}
+.corner-note {
+  position: fixed;
+  z-index: 15;
+  top: 37px;
+  right: max(30px, calc((100vw - 1360px) / 2));
+  color: var(--muted);
+  font:
+    0.59rem 'DM Mono',
+    monospace;
+  letter-spacing: 0.09em;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.corner-note > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7aac8d;
+  box-shadow: 0 0 0 4px rgba(122, 172, 141, 0.16);
+}
+.eyebrow,
+.panel-kicker,
+.panel-index,
+.side-hint {
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.09em;
+  font-size: 0.62rem;
+}
+.eyebrow {
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0 0 29px;
+}
+.eyebrow-line {
+  width: 40px;
+  height: 1px;
+  background: var(--green);
+}
+.panel-index {
+  position: absolute;
+  right: 0;
+  bottom: 114px;
+  color: #87938d;
+  font-size: 0.56rem;
+}
+.panel-kicker {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: #7d8983;
+  font-size: 0.57rem;
+}
+.panel-kicker span:first-child {
+  color: var(--green-dark);
+}
+.side-hint {
+  position: absolute;
+  bottom: 116px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #88948d;
+  font-size: 0.52rem;
+}
+.side-hint b {
+  color: var(--coral);
+  font-size: 0.92rem;
+}
+
+@media (min-width: 1500px) {
+  .panel-content {
+    width: min(1280px, calc(100% - 150px));
+  }
+}
+@media (max-width: 950px) {
+  .panel-content {
+    width: calc(100% - 70px);
+  }
+}
+@media (max-width: 680px) {
+  .page-panel {
+    min-height: 580px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+  .panel-content {
+    width: calc(100% - 42px);
+    height: auto;
+    min-height: 100%;
+    padding: 88px 0 130px;
+  }
+  .corner-brand {
+    top: 17px;
+    left: 21px;
+    font-size: 1.7rem;
+  }
+  .corner-note {
+    top: 25px;
+    right: 21px;
+    font-size: 0.46rem;
+  }
+  .panel-index {
+    bottom: 110px;
+    font-size: 0.48rem;
+  }
+  .panel-kicker {
+    top: 87px;
+    padding-top: 12px;
+    font-size: 0.48rem;
+  }
+  .side-hint {
+    bottom: 106px;
+    font-size: 0.47rem;
+  }
+}
+
+@media (max-height: 700px) and (min-width: 681px) {
+  .panel-content {
+    padding-top: 80px;
+    padding-bottom: 105px;
+  }
+  .panel-kicker {
+    top: 81px;
+  }
+  .panel-index {
+    bottom: 99px;
+  }
+}
+.mobile-scroll-hint {
+  display: none;
+}
+@media (max-width: 680px) {
+  .portfolio-track {
+    position: relative;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: none;
+    overscroll-behavior-x: auto;
+    overscroll-behavior-y: contain;
+    touch-action: pan-y;
+  }
+  .page-panel {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 100svh;
+    overflow: visible;
+    overscroll-behavior-y: auto;
+  }
+  .panel-content {
+    height: auto;
+    min-height: 100svh;
+    padding-bottom: 105px;
+  }
+  .panel-content > .panel-index {
+    position: static;
+    display: block;
+    text-align: right;
+    margin-top: 24px;
+  }
+  .side-hint {
+    position: static;
+    order: 3;
+    margin-top: 26px;
+  }
+  .desktop-scroll-hint {
+    display: none;
+  }
+  .mobile-scroll-hint {
+    display: inline;
+  }
+  .page-panel,
+  .panel-content {
+    min-height: 0;
+  }
+  .panel-content {
+    padding-bottom: 28px;
+  }
+  .panel-content > .panel-index {
+    margin-top: 16px;
+  }
+  .side-hint {
+    margin-top: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-track {
+    scroll-snap-type: none;
+  }
+}

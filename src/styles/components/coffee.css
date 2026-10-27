@@ -1,0 +1,189 @@
+/* components/coffee — feature styles and responsive rules. */
+.coffee-widget {
+  width: 100%;
+  max-width: 260px;
+  justify-self: center;
+}
+.coffee-heading {
+  text-align: center;
+}
+.coffee-heading > span {
+  font:
+    0.5rem 'DM Mono',
+    monospace;
+  color: #45614b;
+  letter-spacing: 0.12em;
+}
+.coffee-heading small {
+  display: block;
+  margin-top: 7px;
+  color: #70806f;
+  font-size: 0.67rem;
+}
+.coffee-stage {
+  position: relative;
+  perspective: 850px;
+}
+.coffee-object {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: transparent;
+  cursor: grab;
+  transform: rotateX(var(--cup-x)) rotateY(var(--cup-y));
+  transition: transform 0.18s ease-out;
+  touch-action: none;
+}
+.coffee-dragging .coffee-object {
+  transition: none;
+  cursor: grabbing;
+}
+.ceramic-cup {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.coffee-tooltip {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translate(-50%, 5px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  border-radius: 20px;
+  padding: 9px 12px;
+  background: #36533b;
+  color: #f7f6f0;
+  font-size: 0.6rem;
+  white-space: nowrap;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+.coffee-stage:hover .coffee-tooltip,
+.coffee-stage:focus-within .coffee-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.coffee-controls {
+  padding: 0 15px;
+}
+.coffee-level > span {
+  display: block;
+  color: #526952;
+  font:
+    0.55rem 'DM Mono',
+    monospace;
+}
+.coffee-meter {
+  height: 3px;
+  margin-top: 9px;
+  background: #d3decd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.coffee-meter > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #577951;
+  transition: width 0.35s;
+}
+.coffee-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 13px;
+}
+.coffee-actions button {
+  flex: 1;
+  min-height: 40px;
+  border: 1px solid #b5c6ad;
+  border-radius: 8px;
+  background: transparent;
+  color: #3e5b43;
+  font:
+    0.65rem 'Manrope',
+    sans-serif;
+  cursor: pointer;
+}
+.coffee-actions button:first-child {
+  background: #456a4b;
+  border-color: #456a4b;
+  color: white;
+}
+.coffee-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.ceramic-finishes {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 12px;
+}
+.ceramic-finishes button {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.ceramic-finishes button > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--finish);
+}
+.ceramic-finishes button[aria-pressed='true'] {
+  border-color: #456a4b;
+}
+.ceramic-finishes button b {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 0.6rem;
+  color: #fff;
+  text-shadow: 0 1px 3px #24332f;
+}
+.coffee-help {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  color: #61775f;
+  font-size: 0.56rem;
+}
+@media (max-width: 950px) and (min-width: 681px) {
+  .coffee-widget {
+    grid-column: 2;
+    max-width: 230px;
+  }
+}
+@media (max-width: 680px) {
+  .coffee-widget {
+    max-width: 270px;
+    align-self: center;
+    margin-top: 8px;
+  }
+  .coffee-actions button {
+    min-height: 44px;
+  }
+  .ceramic-finishes button {
+    width: 44px;
+    height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .coffee-object,
+  .coffee-tooltip,
+  .coffee-meter > span {
+    transition: none;
+  }
+}
