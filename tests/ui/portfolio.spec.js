@@ -35,10 +35,15 @@ test('all app galleries preserve image proportions and fill their width', async 
     for (const image of await images.all()) {
       await image.evaluate((element) => element.decode());
       const dimensions = await image.evaluate((element) => ({
-        actual: element.clientWidth / element.clientHeight,
-        natural: element.naturalWidth / element.naturalHeight,
+        fit: getComputedStyle(element).objectFit,
+        width: element.clientWidth,
+        height: element.clientHeight,
+        loaded: element.naturalWidth > 0,
       }));
-      expect(Math.abs(dimensions.actual / dimensions.natural - 1)).toBeLessThan(0.02);
+      expect(dimensions.fit).toBe('contain');
+      expect(dimensions.width).toBeGreaterThan(0);
+      expect(dimensions.height).toBeGreaterThan(0);
+      expect(dimensions.loaded).toBe(true);
     }
     const thumbnails = gallery.locator('.screenshot-thumbnails');
     const row = await thumbnails.boundingBox();
@@ -113,5 +118,43 @@ test('resizing preserves the selected section', async ({ page }) => {
       'href',
       '#applications',
     );
+  }
+});
+
+test('all projects fit on one screen with project navigation at the top', async ({
+  page,
+}, testInfo) => {
+  const current = page.viewportSize();
+  const sizes =
+    testInfo.project.name === 'desktop'
+      ? [current, { width: 1280, height: 600 }, { width: 844, height: 390 }]
+      : [current];
+  for (const size of sizes) {
+    await page.setViewportSize(size);
+    await page.goto('/#applications');
+    await page.evaluate(() => document.fonts.ready);
+    for (let index = 0; index < applications.length; index += 1) {
+      const bounds = await page.locator('#applications').evaluate((panel) => {
+        const content = panel.querySelector('.applications-content');
+        const gallery = panel.querySelector('.preview-gallery').getBoundingClientRect();
+        const copy = panel.querySelector('.app-copy').getBoundingClientRect();
+        const next = panel.querySelector('[aria-label="Next application"]').getBoundingClientRect();
+        return {
+          overflow: panel.scrollHeight - panel.clientHeight,
+          contentOverflow: content.scrollHeight - content.clientHeight,
+          bottom: panel.getBoundingClientRect().bottom,
+          copyBottom: copy.bottom,
+          galleryBottom: gallery.bottom,
+          galleryTop: gallery.top,
+          controlsBottom: next.bottom,
+        };
+      });
+      expect(bounds.overflow).toBeLessThan(2);
+      expect(bounds.contentOverflow).toBeLessThan(2);
+      expect(bounds.galleryBottom).toBeLessThanOrEqual(bounds.bottom + 1);
+      expect(bounds.copyBottom).toBeLessThanOrEqual(bounds.bottom + 1);
+      expect(bounds.controlsBottom).toBeLessThanOrEqual(bounds.galleryTop);
+      await page.getByRole('button', { name: 'Next application', exact: true }).click();
+    }
   }
 });
