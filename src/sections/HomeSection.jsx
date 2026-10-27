@@ -13,7 +13,7 @@ export default function HomeSection() {
           </p>
           <TypingHeading />
           <p className="hero-intro">
-            I build useful things for the web, work with data, and exploring what happens when code
+            I build useful things for the web, work with data, and explore what happens when code
             meets 3D.
           </p>
           <div className="hero-actions">

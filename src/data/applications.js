@@ -24,6 +24,20 @@ export const applications = [
       result:
         'A live browser game with a code editor, maze simulation, execution logs and an unlockable skill tree.',
     },
+    screenshotSizes: [
+      {
+        width: 1440,
+        height: 900,
+      },
+      {
+        width: 1440,
+        height: 900,
+      },
+      {
+        width: 1440,
+        height: 900,
+      },
+    ],
   },
   {
     id: 'what-to-cook',
@@ -51,6 +65,16 @@ export const applications = [
       result:
         'A live responsive app with a main-and-side dinner picker and a simple name-based entry flow.',
     },
+    screenshotSizes: [
+      {
+        width: 780,
+        height: 1688,
+      },
+      {
+        width: 780,
+        height: 1688,
+      },
+    ],
   },
   {
     id: 'data-wrangling',
@@ -59,7 +83,11 @@ export const applications = [
     description: 'A notebook-led exploration of cleaning, transforming and understanding data.',
     image: '/img/previews/data-wrangling-1.webp',
     animation: '/img/data_wrangle.gif',
-    screenshots: [1, 2, 3].map((number) => '/img/previews/data-wrangling-' + number + '.webp'),
+    screenshots: [
+      '/img/previews/data-wrangling-1.webp',
+      '/img/previews/data-wrangling-2.webp',
+      '/img/previews/data-wrangling-3.webp',
+    ],
     imageAlt: 'Data wrangling notebook preview',
     stack: ['Python', 'Jupyter', 'Data cleaning'],
     href: 'https://github.com/theZoid9/Data-wrangling',
@@ -73,6 +101,20 @@ export const applications = [
       result:
         'A notebook project with a preview and source repository. Dataset findings and measured improvements have not been added.',
     },
+    screenshotSizes: [
+      {
+        width: 1920,
+        height: 1080,
+      },
+      {
+        width: 1920,
+        height: 1080,
+      },
+      {
+        width: 1920,
+        height: 1080,
+      },
+    ],
   },
   {
     id: 'floating-library',
@@ -104,6 +146,20 @@ export const applications = [
       result:
         'A live library with orbit and zoom controls, book detail panels, a reading view and an add-book form for covers and PDF or EPUB files.',
     },
+    screenshotSizes: [
+      {
+        width: 1440,
+        height: 960,
+      },
+      {
+        width: 1440,
+        height: 960,
+      },
+      {
+        width: 1440,
+        height: 960,
+      },
+    ],
   },
   {
     id: 'algoscope',
@@ -135,6 +191,20 @@ export const applications = [
       result:
         'A live visualizer with linked lists, stacks, queues, algorithm lessons, 2D and 3D views, and guided recursive walkthroughs.',
     },
+    screenshotSizes: [
+      {
+        width: 1440,
+        height: 960,
+      },
+      {
+        width: 1440,
+        height: 960,
+      },
+      {
+        width: 1440,
+        height: 960,
+      },
+    ],
   },
 ];
 

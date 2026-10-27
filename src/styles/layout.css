@@ -23,7 +23,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  height: 100svh;
+  height: calc(100svh - 88px);
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -38,11 +38,11 @@
   position: relative;
   flex: 0 0 100vw;
   width: 100vw;
-  height: 100vh;
-  height: 100svh;
-  min-height: 620px;
+  height: 100%;
+  min-height: 0;
   scroll-snap-align: start;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .panel-content {
   position: relative;
@@ -252,5 +252,15 @@
 @media (prefers-reduced-motion: reduce) {
   .portfolio-track {
     scroll-snap-type: none;
+  }
+}
+
+.site-chrome {
+  background: rgb(247 246 240 / 94%);
+  backdrop-filter: blur(12px);
+}
+@media (max-width: 680px) {
+  .portfolio-track {
+    height: calc(100svh - 80px);
   }
 }

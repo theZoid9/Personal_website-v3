@@ -80,3 +80,9 @@ This project uses root-relative asset URLs and is configured for hosting at a do
 For interactive changes, check desktop and phone layouts, floating navigation, next/previous application cycling, archive filters, screenshot controls, skill-to-project links, coffee controls, both CV downloads, and reduced-motion preferences.
 
 An inactive GitHub Actions template is saved at `docs/ci/validate.yml.example`. To enable automatic checks, copy it to `.github/workflows/validate.yml` and push using credentials permitted to update workflows. Until then, run `npm run check` locally. React versions are pinned, and the lockfile records the tested dependency versions.
+
+## Browser UI checks
+
+Run `npx playwright install chromium` once, then `npm run test:ui`. The browser tests cover direct section links, viewport resizing, all five screenshot galleries, image proportions, fullscreen preview controls, keyboard focus, and archive filtering on desktop, tablet, and phone sizes.
+
+Screenshot dimensions are stored in each project's `screenshotSizes` array, in the same order as `screenshots`. Update these when replacing images so their space is reserved before loading. Clicking a screenshot opens its enlarged view. On desktop, the cooking app displays both phone screenshots together.

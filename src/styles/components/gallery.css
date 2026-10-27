@@ -1,167 +1,128 @@
-/* components/gallery — feature styles and responsive rules. */
-.gallery-preview {
-  height: auto;
-  min-height: 0;
-  overflow: visible;
-  background: transparent;
-  display: block;
-}
+/* Screenshots retain their full width and natural proportions. */
 .preview-gallery {
   width: 100%;
   min-width: 0;
 }
 .browser-device {
+  min-width: 0;
   overflow: hidden;
-  border: 7px solid #293e35;
-  border-radius: 14px;
+  border: 6px solid #293e35;
+  border-radius: 12px;
   background: #293e35;
-  box-shadow: 0 14px 28px rgba(36, 51, 47, 0.12);
+  box-shadow: 0 14px 28px rgb(36 51 47 / 12%);
 }
 .browser-toolbar {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 9px 8px 13px;
+  padding: 8px 8px 12px;
   color: #dce9df;
 }
 .browser-toolbar > span {
   color: #df8265;
   font-size: 0.6rem;
   letter-spacing: 3px;
+  white-space: nowrap;
 }
 .browser-toolbar small {
   font:
-    0.52rem 'DM Mono',
+    0.55rem 'DM Mono',
     monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.browser-device img {
+.preview-expand {
   display: block;
   width: 100%;
-  height: 300px;
-  object-fit: contain;
-  background: #f7f6f0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #293e35;
+  cursor: zoom-in;
+}
+.preview-expand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.preview-expand:focus-visible {
+  outline-offset: -5px;
 }
 .screenshot-controls {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 16px;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
 }
 .screenshot-controls button {
-  width: 44px;
+  flex: 0 0 44px;
   height: 44px;
   border-radius: 50%;
   border: 1px solid #7b8e81;
-  color: #24332f;
-  background: #f7f6f0;
+  color: var(--ink);
+  background: var(--paper);
   font-size: 1.2rem;
   cursor: pointer;
 }
 .screenshot-controls > span {
-  min-width: 110px;
   text-align: center;
   font:
-    0.6rem 'DM Mono',
+    0.65rem 'DM Mono',
     monospace;
   color: #435d50;
 }
 .screenshot-thumbnails {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 4px 6px;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 0 6px;
 }
 .screenshot-thumbnails button {
-  width: 70px;
-  height: 48px;
-  border: 2px solid transparent;
-  border-radius: 6px;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 44px;
   padding: 3px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 8px;
   background: #e4eae0;
-  color: #24332f;
-  font:
-    0.6rem 'DM Mono',
-    monospace;
   cursor: pointer;
 }
 .screenshot-thumbnails button[aria-pressed='true'] {
-  border-color: #41725f;
+  border-color: var(--green-dark);
   background: white;
 }
 .screenshot-thumbnails img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: clamp(48px, 6vw, 90px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
 }
-.concept-device {
+.mobile-preview-strip {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #f5d9c9;
-  border-radius: 16px;
-  padding: 12px 0;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 8px 0;
 }
-.concept-device .phone-shell {
-  position: relative;
-  transform: scale(0.8) rotate(-3deg);
-  margin: -32px 0;
-}
-.concept-badge {
-  padding: 12px 14px;
-  color: #654638;
-  font:
-    0.54rem 'DM Mono',
-    monospace;
-  text-align: center;
-}
-.concept-saved-list {
-  flex: 1;
-  display: grid;
-  gap: 8px;
-  padding: 4px 0;
-}
-.concept-saved-list > div {
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  align-content: center;
-  gap: 5px;
-  background: #e9eee4;
-  border-radius: 8px;
-  padding: 10px;
-}
-.concept-saved-list span {
-  grid-row: span 2;
-  color: #41725f;
-}
-.concept-saved-list strong {
-  font-size: 0.65rem;
-}
-.concept-saved-list small {
-  font-size: 0.45rem;
-  color: #52645b;
-}
-@media (max-width: 680px) {
-  .browser-device img {
-    height: 220px;
-  }
-}
-
-/* Real mobile screenshots share the gallery controls with desktop projects. */
 .mobile-screenshot-device {
   position: relative;
-  width: min(100%, 212px);
-  margin-inline: auto;
+  width: min(45%, 260px);
+  min-width: 0;
   overflow: hidden;
   border: 7px solid #293e35;
   border-radius: 28px;
   background: #293e35;
   box-shadow: 0 14px 28px rgb(36 51 47 / 12%);
 }
-.mobile-screenshot-device img {
-  display: block;
-  width: 100%;
-  height: auto;
+.mobile-screenshot-device.is-selected {
+  box-shadow:
+    0 0 0 3px #8eac98,
+    0 14px 28px rgb(36 51 47 / 12%);
 }
 .mobile-camera {
   position: absolute;
@@ -173,6 +134,7 @@
   border-radius: 8px;
   background: #293e35;
   transform: translateX(-50%);
+  pointer-events: none;
 }
 .collection-mobile-preview > img {
   width: auto;
@@ -182,4 +144,73 @@
   margin: 10px auto;
   border: 4px solid #293e35;
   border-radius: 14px;
+}
+.screenshot-lightbox {
+  width: min(1600px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100svh - 32px);
+  padding: 16px;
+  border: 1px solid #7b8e81;
+  border-radius: 16px;
+  color: var(--ink);
+  background: var(--paper);
+  overscroll-behavior: contain;
+}
+.screenshot-lightbox::backdrop {
+  background: rgb(10 20 16 / 85%);
+  backdrop-filter: blur(6px);
+}
+.lightbox-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.lightbox-heading strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.lightbox-heading button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+.lightbox-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100svh - 220px);
+  margin: auto;
+  object-fit: contain;
+}
+@media (max-width: 680px) {
+  .browser-device {
+    border-width: 4px;
+    border-radius: 10px;
+  }
+  .browser-toolbar {
+    gap: 8px;
+    padding: 6px 6px 9px;
+  }
+  .browser-toolbar small {
+    font-size: 0.48rem;
+  }
+  .screenshot-thumbnails {
+    gap: 8px;
+  }
+  .mobile-preview-strip > .mobile-screenshot-device {
+    width: min(82%, 260px);
+  }
+  .mobile-preview-strip > .mobile-screenshot-device:not(.is-selected) {
+    display: none;
+  }
+  .screenshot-lightbox {
+    padding: 10px;
+  }
 }

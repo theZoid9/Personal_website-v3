@@ -371,16 +371,9 @@
     font-size: 0.68rem;
     gap: 8px;
   }
-  .all-projects-panel {
-    display: none;
-  }
 }
 .case-study-body .preview-gallery {
   margin-bottom: 24px;
-}
-.case-study-body .browser-device img {
-  height: auto;
-  max-height: 380px;
 }
 
 @media (max-width: 680px) {
@@ -393,5 +386,11 @@
   }
   .all-projects-content > .panel-index {
     margin-top: 16px;
+  }
+}
+
+@media (max-width: 680px) {
+  .all-projects-content {
+    padding-bottom: 96px;
   }
 }
