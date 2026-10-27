@@ -105,6 +105,37 @@ export const applications = [
         'A live library with orbit and zoom controls, book detail panels, a reading view and an add-book form for covers and PDF or EPUB files.',
     },
   },
+  {
+    id: 'algoscope',
+    type: 'ALGORITHM VISUALIZER',
+    title: 'AlgoScope',
+    description:
+      'An interactive learning tool for exploring data structures and algorithms in 2D and 3D, with guided code steps, execution traces and recursive call stacks.',
+    image: '/img/previews/algoscope-1.webp',
+    screenshots: [
+      '/img/previews/algoscope-1.webp',
+      '/img/previews/algoscope-2.webp',
+      '/img/previews/algoscope-3.webp',
+    ],
+    screenshotAlts: [
+      'AlgoScope linked-list visualization with operation controls and code panel',
+      'AlgoScope 3D boxes during a step-by-step append operation',
+      'AlgoScope Fibonacci walkthrough with highlighted code, call stack and execution trace',
+    ],
+    imageAlt: 'AlgoScope visual data structures and algorithms',
+    stack: ['JavaScript', 'Data structures', '3D visualization'],
+    href: 'https://algoscope-hsyz.onrender.com/',
+    action: 'Explore AlgoScope',
+    tone: 'blue',
+    category: 'Web',
+    caseStudy: {
+      role: 'Interactive algorithm lessons and visual learning interface.',
+      challenge:
+        'Keep visual data structures, highlighted source code and execution traces synchronized so each operation is easy to follow.',
+      result:
+        'A live visualizer with linked lists, stacks, queues, algorithm lessons, 2D and 3D views, and guided recursive walkthroughs.',
+    },
+  },
 ];
 
 export const applicationCategories = [

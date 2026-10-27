@@ -26,7 +26,7 @@ export default function CoffeeWidget() {
   return (
     <div className={`coffee-widget ${dragging ? 'coffee-dragging' : ''}`}>
       <div className="coffee-heading">
-        <span>COFFEE LOVER</span>
+        <span>POUR YOURSELF A COFFEE</span>
         <small>Coffee first. Mints after.</small>
       </div>
       <div className="coffee-stage">
