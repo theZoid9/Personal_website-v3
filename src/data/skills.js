@@ -1,7 +1,7 @@
 export const skillGroups = [
   {
-    projectId: 'techsquare',
-    evidence: 'React · TypeScript · CSS',
+    projectId: 'code-to-move',
+    evidence: 'Next.js · React · Interactive gameplay',
     title: 'Web applications',
     skills: ['React', 'JavaScript', 'TypeScript', 'HTML & CSS'],
   },

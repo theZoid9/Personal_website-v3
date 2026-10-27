@@ -1,24 +1,28 @@
 export const applications = [
   {
-    id: 'techsquare',
-    type: 'WEB APPLICATION',
-    title: 'Techsquare',
-    description: 'A clear, customer-facing web experience for a technology retailer.',
-    image: '/img/previews/techsquare-1.webp',
-    animation: '/img/techS.gif',
-    screenshots: [1, 2, 3].map((number) => '/img/previews/techsquare-' + number + '.webp'),
-    imageAlt: 'Techsquare website preview',
-    stack: ['React', 'TypeScript', 'CSS'],
-    href: 'https://techsquare.co.za',
-    action: 'Visit website',
+    id: 'code-to-move',
+    type: 'CODING PUZZLE GAME',
+    title: 'Code to Move',
+    description:
+      'A programming puzzle game where you write code to guide an agent through mazes, clear missions and unlock the skill tree.',
+    image: '/img/previews/code-to-move-1.webp',
+    screenshots: [
+      '/img/previews/code-to-move-1.webp',
+      '/img/previews/code-to-move-2.webp',
+      '/img/previews/code-to-move-3.webp',
+    ],
+    imageAlt: 'Code to Move (Algorithm Prison) code editor and maze puzzle',
+    stack: ['Next.js', 'React', 'JavaScript'],
+    href: 'https://code-to-move.onrender.com/',
+    action: 'Play the game',
     tone: 'mint',
     category: 'Web',
     caseStudy: {
-      role: 'Contribution details to be added.',
+      role: 'Web application and interactive gameplay.',
       challenge:
-        'Design goal: present a technology retailer clearly and help visitors explore its offering.',
+        'Turn programming instructions into visible agent movement, mission objectives and a clear progression path.',
       result:
-        'A website preview and a link to the customer-facing experience. Impact measurements have not been added.',
+        'A live browser game with a code editor, maze simulation, execution logs and an unlockable skill tree.',
     },
   },
   {
