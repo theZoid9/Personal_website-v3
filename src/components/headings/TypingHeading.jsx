@@ -1,5 +1,23 @@
 import React, { useEffect, useState } from 'react';
 
+const greeting = 'Hey, I’m Zaid.';
+const roles = ['Developer.', 'Data engineer.', 'Coffee lover.'];
+const totalLength = greeting.length + roles.join(' ').length;
+
+function RoleText({ length }) {
+  let offset = 0;
+  return roles.map((role, index) => {
+    const visible = role.slice(0, Math.max(0, length - offset));
+    offset += role.length + 1;
+    return (
+      <React.Fragment key={role}>
+        {index > 0 && ' '}
+        <span className="hero-role-part">{visible}</span>
+      </React.Fragment>
+    );
+  });
+}
+
 export default function TypingHeading() {
   const [length, setLength] = useState(0);
   useEffect(() => {
@@ -8,7 +26,7 @@ export default function TypingHeading() {
     const start = () => {
       clearInterval(timer);
       if (preference.matches) {
-        setLength(21);
+        setLength(totalLength);
         return;
       }
       setLength(0);
@@ -16,8 +34,8 @@ export default function TypingHeading() {
       timer = setInterval(() => {
         count += 1;
         setLength(count);
-        if (count >= 21) clearInterval(timer);
-      }, 95);
+        if (count >= totalLength) clearInterval(timer);
+      }, 45);
     };
     start();
     preference.addEventListener('change', start);
@@ -26,24 +44,22 @@ export default function TypingHeading() {
       preference.removeEventListener('change', start);
     };
   }, []);
+
   return (
-    <h1 aria-label="Ideas into interfaces.">
+    <h1 aria-label={greeting + ' ' + roles.join(' ')}>
       <span className="typing-line typing-first" aria-hidden="true">
-        <span className="typing-reserve">Ideas into</span>
+        <span className="typing-reserve">{greeting}</span>
         <span className="typing-text">
-          {'Ideas into'.slice(0, length)}
-          {length < 10 && <b className="typing-caret" />}
+          {greeting.slice(0, length)}
+          {length < greeting.length && <b className="typing-caret" />}
         </span>
       </span>
-      <br />
       <span className="typing-line typing-second" aria-hidden="true">
         <span className="typing-reserve">
-          interfaces<i>.</i>
+          <RoleText length={totalLength} />
         </span>
         <span className="typing-text">
-          {'interfaces'.slice(0, Math.max(0, length - 10))}
-          {length >= 21 && <i>.</i>}
-          {length >= 10 && length < 21 && <b className="typing-caret" />}
+          <RoleText length={Math.max(0, length - greeting.length)} />
         </span>
       </span>
     </h1>

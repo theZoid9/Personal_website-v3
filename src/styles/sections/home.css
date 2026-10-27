@@ -347,3 +347,33 @@
 .typing-started .about-type-letter {
   animation: about-letter 0.01s var(--letter-delay) both;
 }
+
+/* Name first, followed by a smaller introduction that wraps between roles. */
+.hero-copy h1 {
+  font-size: clamp(3.5rem, 7.5vw, 6.75rem);
+  letter-spacing: -0.075em;
+}
+.hero-copy h1 .typing-second {
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+  font-size: clamp(1.2rem, 2.5vw, 2.05rem);
+  line-height: 1.45;
+  letter-spacing: -0.035em;
+  white-space: normal;
+}
+.typing-second .typing-text {
+  right: 0;
+}
+.hero-role-part {
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 680px) {
+  .hero-copy h1 {
+    font-size: clamp(2.6rem, 11vw, 4.5rem);
+  }
+  .hero-copy h1 .typing-second {
+    margin-top: 18px;
+  }
+}

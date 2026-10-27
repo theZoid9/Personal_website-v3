@@ -58,7 +58,7 @@ export default function ContactSection() {
           <a className="brand" href="#home">
             ZA<span>.</span>
           </a>
-          <span>DESIGNED & BUILT WITH CURIOSITY</span>
+          <span>DESIGNED & BUILT BY ZAID</span>
           <span>
             © {new Date().getFullYear()} {profile.name.toUpperCase()}
           </span>

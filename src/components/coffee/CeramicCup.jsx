@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CeramicCup({ id, palette, level, finish }) {
+export default function CeramicCup({ id, palette, level }) {
   return (
     <svg viewBox="0 0 320 320" aria-hidden="true" className="ceramic-cup">
       <defs>
@@ -51,28 +51,6 @@ export default function CeramicCup({ id, palette, level, finish }) {
         <ellipse cx="124" cy={120 - level * 0.28} rx="41" ry="8" fill="#be9065" opacity=".25" />
       </g>
       <ellipse cx="140" cy="97" rx="87" ry="28" fill="none" stroke={palette[0]} strokeWidth="4" />
-      <text
-        x="142"
-        y="174"
-        textAnchor="middle"
-        fill={finish === 'charcoal' ? '#f5f1df' : '#36533b'}
-        fontFamily="Georgia,serif"
-        fontSize="22"
-        fontStyle="italic"
-      >
-        curiosity.
-      </text>
-      <text
-        x="142"
-        y="195"
-        textAnchor="middle"
-        fill={finish === 'charcoal' ? '#dedecd' : '#56705a'}
-        fontFamily="Arial,sans-serif"
-        fontSize="8"
-        letterSpacing="2"
-      >
-        BREW SOMETHING GOOD
-      </text>
       <path
         d="M113 54 Q105 41 114 27 M141 49 Q151 35 143 20 M170 54 Q160 43 170 29"
         fill="none"

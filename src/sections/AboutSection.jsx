@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutHeading from '../components/headings/AboutHeading.jsx';
-import CuriosityBadge from '../components/coffee/CuriosityBadge.jsx';
+import CoffeeWidget from '../components/coffee/CoffeeWidget.jsx';
 import { profile } from '../data/profile.js';
 
 export default function AboutSection() {
@@ -13,7 +13,7 @@ export default function AboutSection() {
         </div>
         <div className="about-layout">
           <div>
-            <p className="eyebrow">CURIOUS BY NATURE</p>
+            <p className="eyebrow">DEVELOPER. COFFEE LOVER.</p>
             <AboutHeading />
           </div>
           <div className="about-detail">
@@ -32,11 +32,11 @@ export default function AboutSection() {
               </div>
               <div>
                 <small>OFF-SCREEN</small>
-                <strong>Fishing · Gaming</strong>
+                <strong>{profile.interests.join(' · ')}</strong>
               </div>
             </div>
           </div>
-          <CuriosityBadge />
+          <CoffeeWidget />
         </div>
         <span className="panel-index">02 — 06</span>
       </div>

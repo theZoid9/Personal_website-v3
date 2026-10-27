@@ -1,7 +1,8 @@
 import React, { useId, useRef, useState } from 'react';
 import CeramicCup from './CeramicCup.jsx';
+import MintTin from './MintTin.jsx';
 
-export default function CuriosityBadge() {
+export default function CoffeeWidget() {
   const id = useId().replace(/:/g, '');
   const [finish, setFinish] = useState('sage');
   const [level, setLevel] = useState(35);
@@ -25,12 +26,12 @@ export default function CuriosityBadge() {
   return (
     <div className={`coffee-widget ${dragging ? 'coffee-dragging' : ''}`}>
       <div className="coffee-heading">
-        <span>THE CURIOSITY CUP</span>
-        <small>A little fuel for good ideas.</small>
+        <span>COFFEE LOVER</span>
+        <small>Coffee first. Mints after.</small>
       </div>
       <div className="coffee-stage">
         <span className="coffee-tooltip" id={`${id}-hint`}>
-          Powered by curiosity
+          Always room for another cup.
         </span>
         <button
           type="button"
@@ -98,6 +99,7 @@ export default function CuriosityBadge() {
           <CeramicCup id={id} palette={palette} level={level} finish={finish} />
         </button>
       </div>
+      <MintTin />
       <div className="coffee-controls">
         <div className="coffee-level">
           <span role="status">

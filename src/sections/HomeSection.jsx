@@ -13,8 +13,8 @@ export default function HomeSection() {
           </p>
           <TypingHeading />
           <p className="hero-intro">
-            I’m Zaid — a full-stack developer and data engineer building useful things for the web,
-            and exploring what happens when code meets 3D.
+            I build useful things for the web, work with data, and exploring what happens when code
+            meets 3D.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#applications">

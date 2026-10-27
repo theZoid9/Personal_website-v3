@@ -1,4 +1,24 @@
 /* layout — feature styles and responsive rules. */
+.site-chrome {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+  padding-inline: max(30px, calc((100vw - 1360px) / 2));
+  pointer-events: none;
+}
+.site-chrome a {
+  pointer-events: auto;
+}
+@media (max-width: 680px) {
+  .site-chrome {
+    height: 64px;
+    padding-inline: 21px;
+  }
+}
 .portfolio-track {
   display: flex;
   width: 100vw;
@@ -32,10 +52,6 @@
   padding: 104px 0 122px;
 }
 .corner-brand {
-  position: fixed;
-  z-index: 15;
-  top: 26px;
-  left: max(30px, calc((100vw - 1360px) / 2));
   font:
     2rem Gagalin,
     sans-serif;
@@ -46,10 +62,6 @@
   color: var(--coral);
 }
 .corner-note {
-  position: fixed;
-  z-index: 15;
-  top: 37px;
-  right: max(30px, calc((100vw - 1360px) / 2));
   color: var(--muted);
   font:
     0.59rem 'DM Mono',
@@ -147,13 +159,9 @@
     padding: 88px 0 130px;
   }
   .corner-brand {
-    top: 17px;
-    left: 21px;
     font-size: 1.7rem;
   }
   .corner-note {
-    top: 25px;
-    right: 21px;
     font-size: 0.46rem;
   }
   .panel-index {
