@@ -146,3 +146,40 @@
     height: 220px;
   }
 }
+
+/* Real mobile screenshots share the gallery controls with desktop projects. */
+.mobile-screenshot-device {
+  position: relative;
+  width: min(100%, 212px);
+  margin-inline: auto;
+  overflow: hidden;
+  border: 7px solid #293e35;
+  border-radius: 28px;
+  background: #293e35;
+  box-shadow: 0 14px 28px rgb(36 51 47 / 12%);
+}
+.mobile-screenshot-device img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mobile-camera {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  z-index: 1;
+  width: 44px;
+  height: 7px;
+  border-radius: 8px;
+  background: #293e35;
+  transform: translateX(-50%);
+}
+.collection-mobile-preview > img {
+  width: auto;
+  height: calc(100% - 20px);
+  max-width: 100%;
+  object-fit: contain;
+  margin: 10px auto;
+  border: 4px solid #293e35;
+  border-radius: 14px;
+}

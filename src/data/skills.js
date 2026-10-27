@@ -6,7 +6,7 @@ export const skillGroups = [
     skills: ['React', 'JavaScript', 'TypeScript', 'HTML & CSS'],
   },
   {
-    projectId: 'snaaake',
+    projectId: 'floating-library',
     evidence: 'Three.js · browser interaction',
     title: '3D & interaction',
     skills: ['Three.js', 'WebGL', 'Creative coding', 'Web animation'],
@@ -23,8 +23,8 @@ export const skillGroups = [
     skills: ['Node.js', 'Express', 'Django', 'REST APIs', 'PostgreSQL'],
   },
   {
-    projectId: 'snaaake',
-    evidence: 'JavaScript · 3D gameplay',
+    projectId: 'code-to-move',
+    evidence: 'JavaScript · Coding puzzles',
     title: 'Game development',
     skills: ['Pygame', 'Unity modding', 'JavaScript', 'Three.js', 'Game mechanics'],
   },

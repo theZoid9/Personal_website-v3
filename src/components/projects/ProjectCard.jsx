@@ -1,16 +1,16 @@
 import React from 'react';
-import PlaceMarkerPreview from './PlaceMarkerPreview.jsx';
 import PreviewGallery from './PreviewGallery.jsx';
 
 export default function ProjectCard({ project }) {
   return (
     <article className={`collection-card collection-${project.tone}`}>
-      <div className={`collection-preview ${project.image ? '' : 'collection-place-marker'}`}>
-        {project.image ? (
-          <img src={project.image} alt={project.imageAlt} loading="lazy" />
-        ) : (
-          <PlaceMarkerPreview />
-        )}
+      <div
+        className={
+          'collection-preview' +
+          (project.previewFormat === 'mobile' ? ' collection-mobile-preview' : '')
+        }
+      >
+        <img src={project.image} alt={project.imageAlt} loading="lazy" />
       </div>
       <div className="collection-info">
         <p className="collection-type">{project.type}</p>

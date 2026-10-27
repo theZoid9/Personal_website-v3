@@ -26,19 +26,30 @@ export const applications = [
     },
   },
   {
-    id: 'place-marker',
-    type: 'MOBILE APP CONCEPT',
-    title: 'Place Marker',
+    id: 'what-to-cook',
+    type: 'DINNER PICKER APP',
+    title: 'What to Cook?',
     description:
-      'A pocket-sized map concept for saving favourite spots and quickly switching between places.',
-    stack: ['Mobile UI', 'Maps', 'React'],
+      'A mobile-friendly dinner picker for choosing a main and side, with separate entry points for cooking and voting.',
+    image: '/img/previews/what-to-cook-2.webp',
+    screenshots: ['/img/previews/what-to-cook-2.webp', '/img/previews/what-to-cook-1.webp'],
+    screenshotAlts: [
+      'What to Cook dinner picker with main and side spin controls',
+      'What to Cook entry screen with cooking and voting options',
+    ],
+    previewFormat: 'mobile',
+    imageAlt: 'What to Cook mobile dinner picker',
+    stack: ['JavaScript', 'Responsive UI', 'Meal planning'],
+    href: 'https://what-to-cook-7mqy.onrender.com/login',
+    action: 'Open the app',
     tone: 'peach',
     category: 'Mobile',
     caseStudy: {
-      role: 'Concept exploration within this portfolio.',
-      challenge: 'Design goal: make saved places easy to find through a compact map interface.',
+      role: 'Mobile-friendly web application and dinner selection interface.',
+      challenge:
+        'Make deciding what to cook quick and approachable, with clear cooking and voting entry points.',
       result:
-        'An interface mockup showing map pins, a saved-place card and navigation. This is a concept, not a released mobile application.',
+        'A live responsive app with a main-and-side dinner picker and a simple name-based entry flow.',
     },
   },
   {
@@ -64,25 +75,34 @@ export const applications = [
     },
   },
   {
-    id: 'snaaake',
-    type: '3D WEB EXPERIMENT',
-    title: 'Snaaake — 3D',
-    description: 'A familiar arcade game reimagined as a playful, browser-based 3D experience.',
-    image: '/img/previews/snaaake-1.webp',
-    animation: '/img/snake.gif',
-    screenshots: [1, 2, 3].map((number) => '/img/previews/snaaake-' + number + '.webp'),
-    imageAlt: 'Three dimensional Snaaake game preview',
-    stack: ['Three.js', 'JavaScript', 'CSS'],
-    href: 'https://snakethreejs.onrender.com',
-    action: 'Play the game',
+    id: 'floating-library',
+    type: '3D BOOK MANAGEMENT',
+    title: 'Floating Library',
+    description:
+      'An interactive 3D bookshelf where you orbit floating covers, explore book details and manage your reading collection.',
+    image: '/img/previews/floating-library-1.webp',
+    screenshots: [
+      '/img/previews/floating-library-1.webp',
+      '/img/previews/floating-library-2.webp',
+      '/img/previews/floating-library-3.webp',
+    ],
+    screenshotAlts: [
+      'Floating Library 3D collection of book covers',
+      'Floating Library add-book form with cover and PDF or EPUB uploads',
+      'Floating Library book details with reading and save controls',
+    ],
+    imageAlt: 'Floating Library interactive 3D book collection',
+    stack: ['Three.js', 'JavaScript', 'WebGL'],
+    href: 'https://book-management-pwjx.onrender.com/',
+    action: 'Explore the library',
     tone: 'lavender',
-    category: 'Games',
+    category: '3D',
     caseStudy: {
-      role: 'Contribution details to be added.',
+      role: 'Interactive 3D library and book management interface.',
       challenge:
-        'Project focus: translate familiar Snake gameplay into a browser-based 3D presentation.',
+        'Make a book collection browsable in 3D while keeping book details, reading and collection tools easy to reach.',
       result:
-        'A playable browser experiment with a game preview. Player feedback and performance measurements have not been added.',
+        'A live library with orbit and zoom controls, book detail panels, a reading view and an add-book form for covers and PDF or EPUB files.',
     },
   },
 ];

@@ -33,7 +33,7 @@ src/
   sections/                Home, About, Applications, Projects, Skills, Contact
   components/
     layout/                Fixed branding and floating navigation
-    projects/              Project cards, galleries, app previews, map concept
+    projects/              Project cards, screenshot galleries, app previews
     headings/              Home and About typing effects
     coffee/                Interactive coffee widget and its SVG artwork
   hooks/
