@@ -40,7 +40,7 @@ test('all app galleries preserve image proportions and fill their width', async 
         height: element.clientHeight,
         loaded: element.naturalWidth > 0,
       }));
-      expect(dimensions.fit).toBe('contain');
+      expect(dimensions.fit).toBe('cover');
       expect(dimensions.width).toBeGreaterThan(0);
       expect(dimensions.height).toBeGreaterThan(0);
       expect(dimensions.loaded).toBe(true);
