@@ -5,7 +5,7 @@ export const profile = {
   interests: ['Coffee', 'Fishing', 'Gaming'],
   resumeUrl: '/files/ZaidAkhalwaya.pdf',
   resumeDownloadName: 'Zaid-Akhalwaya-CV.pdf',
-  portraitUrl: '/img/ZaidAkhalwaya.webp',
+  portraitUrl: '/img/ZaidAkhalwaya.png',
   socials: [
     { label: 'GitHub', href: 'https://github.com/theZoid9' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ZaidAkhalwaya/' },
